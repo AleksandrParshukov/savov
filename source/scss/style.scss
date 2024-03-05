@@ -1,3 +1,66 @@
+@font-face {
+  font-family: 'RF Dewi Expanded';
+  src: url('../fonts/RFDewiExpanded-Regular.ttf');
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'RF Dewi Expanded';
+  src: url('../fonts/RFDewiExpanded-Ultrabold.ttf');
+  font-style: normal;
+  font-weight: 800;
+}
+
+@font-face {
+  font-family: 'RF Dewi Expanded';
+  src: url('../fonts/RFDewiExpanded-Bold.ttf');
+  font-style: normal;
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: 'RF Dewi Expanded';
+  src: url('../fonts/RFDewiExpanded-Black.ttf');
+  font-style: normal;
+  font-weight: 900;
+}
+
+@font-face {
+  font-family: 'RF Dewi Expanded';
+  src: url('../fonts/RFDewiExpanded-Light.ttf');
+  font-style: normal;
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: 'RF Dewi Expanded';
+  src: url('../fonts/RFDewiExpanded-Semibold.ttf');
+  font-style: normal;
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: 'RF Dewi Extended';
+  src: url('../fonts/RFDewiExtended-Semibold.ttf');
+  font-style: normal;
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: 'RF Dewi Extended';
+  src: url('../fonts/RFDewiExtended-Ultrabold.ttf');
+  font-style: normal;
+  font-weight: 800;
+}
+
+@font-face {
+  font-family: 'RF Dewi Extended';
+  src: url('../fonts/RFDewiExtended-Bold.ttf');
+  font-style: normal;
+  font-weight: 700;
+}
+
 @import '_global/variables.scss';
 @import '_global/global.scss';
 @import '_global/util.scss';
@@ -11,3 +74,10 @@
 @import '_blocks/steps';
 @import '_blocks/technologies';
 @import '_blocks/rates';
+@import '_blocks/cases';
+@import '_blocks/our-mission';
+@import '_blocks/team';
+@import '_blocks/order';
+@import '_blocks/clients';
+@import '_blocks/testimonials';
+@import '_blocks/reviews';

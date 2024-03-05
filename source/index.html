@@ -240,7 +240,7 @@
       <h2 class="rates__title">Тарифы и<br> пакеты</h2>
       <ul class="rates__control">
         <li>
-          <div class="rates__btn active">
+          <div class="rates__btn js_rates_btn active" data-item="0">
             <p class="rates__name">настройка</p>
             <p class="rates__price">59 000 ₽</p>
             <p class="rates__more">
@@ -254,7 +254,7 @@
           </div>
         </li>
         <li>
-          <div class="rates__btn">
+          <div class="rates__btn js_rates_btn" data-item="1">
             <p class="rates__name">ведение</p>
             <p class="rates__price">49 000 ₽</p>
             <p class="rates__more">
@@ -268,7 +268,7 @@
           </div>
         </li>
         <li>
-          <div class="rates__btn">
+          <div class="rates__btn js_rates_btn" data-item="2">
             <p class="rates__name">Масштабирование</p>
             <p class="rates__price">99 000 ₽</p>
             <p class="rates__more">
@@ -282,7 +282,7 @@
           </div>
         </li>
         <li>
-          <div class="rates__btn">
+          <div class="rates__btn js_rates_btn" data-item="3">
             <p class="rates__name">аудит</p>
             <p class="rates__price">19 900</p>
             <p class="rates__more">
@@ -342,251 +342,569 @@
   </div>
 </section>
 
+
+<section class="cases">
+  <div class="wrapper">
+    <h2 class="cases__title">Кейсы</h2>
+
+    <img class="cases__logo" src="./img/flexalen_logo.png" width="235" height="37" alt="">
+
+    <div class="cases__slider-wrapper">
+      <div class="cases__slider">
+        <div class="cases__item">
+          <div class="cases__content">
+            <p class="cases__caption">
+              Строительство и монтаж бассейнов “Твой Бассейн”
+            </p>
+
+            <div class="cases__pros-cons">
+              <div class="cases__cons">
+                <p>
+                  <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1.67618 1.49409L13.1752 12.4332" stroke="#FF0000" stroke-width="2" />
+                    <path d="M1.17578 12.3428L13.1758 1.52832" stroke="#FF0000" stroke-width="2" />
+                  </svg>
+
+                  Проблема
+                </p>
+
+                <p>Проект-менеджер отправляет вам: бриф (оформление сайта)</p>
+              </div>
+              <div class="cases__pros">
+                <p>
+                  <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1.69922 6.4476L6.65588 11.438L12.6564 1.4375" stroke="#70BD0B" stroke-width="2" />
+                  </svg>
+
+                  Решение
+                </p>
+
+                <p>Проект-менеджер отправляет вам: бриф (оформление сайта)</p>
+              </div>
+            </div>
+
+            <div class="cases__graph">
+              <img src="./img/cases_graph.svg" width="901" height="303" alt="">
+            </div>
+          </div>
+
+          <div class="cases__aside">
+            <div class="cases__aside-top">
+              <p>Цифры</p>
+              <p>График</p>
+            </div>
+
+            <img class="cases__aside-img" src="./img/cases_dices.png" width="275" height="275" alt="">
+
+            <a class="cases__btn btn" href="">Хочу так же</a>
+          </div>
+        </div>
+
+        <div class="cases__item">
+          <div class="cases__content">
+            <p class="cases__caption">
+              Строительство и монтаж бассейнов “Твой Бассейн”
+            </p>
+
+            <div class="cases__pros-cons">
+              <div class="cases__cons">
+                <p>
+                  <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1.67618 1.49409L13.1752 12.4332" stroke="#FF0000" stroke-width="2" />
+                    <path d="M1.17578 12.3428L13.1758 1.52832" stroke="#FF0000" stroke-width="2" />
+                  </svg>
+
+                  Проблема
+                </p>
+
+                <p>Проект-менеджер отправляет вам: бриф (оформление сайта)</p>
+              </div>
+              <div class="cases__pros">
+                <p>
+                  <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1.69922 6.4476L6.65588 11.438L12.6564 1.4375" stroke="#70BD0B" stroke-width="2" />
+                  </svg>
+
+                  Решение
+                </p>
+
+                <p>Проект-менеджер отправляет вам: бриф (оформление сайта)</p>
+              </div>
+            </div>
+
+            <div class="cases__graph">
+              <img src="./img/cases_graph_2.svg" width="897" height="247" alt="">
+            </div>
+          </div>
+
+          <div class="cases__aside">
+            <div class="cases__aside-top">
+              <p>Цифры</p>
+              <p>График</p>
+            </div>
+
+            <img class="cases__aside-img" src="./img/cases_grow.png" width="275" height="275" alt="">
+
+            <a class="cases__btn btn" href="">Хочу так же</a>
+          </div>
+        </div>
+
+        <div class="cases__item">
+          <div class="cases__content">
+            <p class="cases__caption">
+              Строительство и монтаж бассейнов “Твой Бассейн”
+            </p>
+
+            <div class="cases__pros-cons">
+              <div class="cases__cons">
+                <p>
+                  <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1.67618 1.49409L13.1752 12.4332" stroke="#FF0000" stroke-width="2" />
+                    <path d="M1.17578 12.3428L13.1758 1.52832" stroke="#FF0000" stroke-width="2" />
+                  </svg>
+
+                  Проблема
+                </p>
+
+                <p>Проект-менеджер отправляет вам: бриф (оформление сайта)</p>
+              </div>
+              <div class="cases__pros">
+                <p>
+                  <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1.69922 6.4476L6.65588 11.438L12.6564 1.4375" stroke="#70BD0B" stroke-width="2" />
+                  </svg>
+
+                  Решение
+                </p>
+
+                <p>Проект-менеджер отправляет вам: бриф (оформление сайта)</p>
+              </div>
+            </div>
+
+            <div class="cases__graph">
+              <img src="./img/cases_graph_3.svg" width="896" height="217" alt="">
+            </div>
+          </div>
+
+          <div class="cases__aside">
+            <div class="cases__aside-top">
+              <p>Цифры</p>
+              <p>График</p>
+            </div>
+
+            <img class="cases__aside-img" src="./img/cases_dices.png" width="275" height="275" alt="">
+
+            <a class="cases__btn btn" href="">Хочу так же</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="our-mission">
+  <div class="wrapper">
+    <p>
+      Наша миссия это успех и масштабирование вашего бизнеса
+    </p>
+  </div>
+</section>
+
+<section class="team">
+  <div class="wrapper">
+    <h2 class="team__title">Команда экспертов</h2>
+
+    <div class="team__list js_team_slider">
+      <div class="team__item">
+        <img class="team__photo" src="./img/team_photo_1.jpg" width="174" height="182" alt="">
+
+        <div class="team__info">
+          <p class="team__name">Глеб Савов</p>
+          <p class="team__position">CEO / Эксперт по маркетингу</p>
+          <p class="team__experience">В digital 10 лет</p>
+
+          <div class="team__tags">
+            <p class="team__tag">#таргет</p>
+            <p class="team__tag">#менеджмент</p>
+            <p class="team__tag">#менеджмент</p>
+          </div>
+        </div>
+
+        <div class="team__icon">
+          <img src="./img/team_icon_1.png" width="143" height="118" alt="">
+        </div>
+
+        <p class="team__desc">
+          Разработаю стратегию успеха для вашего бизнеса. Веду “ADs’кий подкаст” о главных трендах в маркетинге
+
+          <a href="">
+            Подробнее
+
+            <svg width="34" height="14" viewBox="0 0 34 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g clip-path="url(#clip0_312_22894)">
+                <path d="M5.69265 11.3477C5.42063 11.2553 5.23469 11.13 5.00769 10.8866C4.53086 10.3751 4.50466 10.2225 4.50466 7.9514C4.50466 5.76309 4.5386 5.55701 4.98284 5.04317C5.60569 4.32299 7.04587 4.34429 7.66091 5.08275C8.06937 5.57327 8.10257 5.79165 8.10257 7.98499C8.10257 9.72088 8.08736 10.0102 7.98038 10.3139C7.81637 10.7791 7.33309 11.2291 6.84276 11.3732C6.38032 11.5091 6.15257 11.5041 5.69265 11.3476V11.3477ZM6.53816 10.2951C6.81581 10.1896 6.84669 9.95868 6.84669 7.99151C6.84669 6.73619 6.82117 6.05444 6.76998 5.9433C6.59824 5.57011 6.00899 5.57011 5.83724 5.9433C5.78606 6.05444 5.76053 6.73619 5.76053 7.99151C5.76053 10.1864 5.78884 10.3137 6.28108 10.3315C6.36206 10.3344 6.47774 10.318 6.53816 10.2951ZM9.55409 11.3109C9.45633 11.2583 9.3188 11.1007 9.24861 10.9608C9.13015 10.7248 9.11942 10.4835 9.10068 7.63222L9.08052 4.5581H10.3767V7.37198C10.3767 9.78042 10.3912 10.198 10.4777 10.2688C10.6281 10.3924 10.8725 10.302 11.1488 10.0204L11.395 9.7696V4.55817H12.6848V11.3448H11.395V10.6614L11.0725 10.9448C10.8952 11.1006 10.6518 11.2694 10.5316 11.32C10.2515 11.4378 9.78198 11.4334 9.55409 11.3109ZM1.68654 9.47999L1.68553 7.61536L0.846669 4.9612L0.0078125 2.30703L0.689379 2.28775C1.08834 2.27646 1.38812 2.29608 1.41242 2.33505C1.4353 2.37168 1.65165 3.14373 1.89319 4.05072C2.13486 4.9577 2.34788 5.69993 2.36682 5.70006C2.38583 5.7002 2.56382 5.08806 2.76245 4.33965C2.96115 3.59131 3.16922 2.82026 3.22496 2.62621L3.32631 2.27344H4.04155C4.62427 2.27344 4.75013 2.29077 4.7206 2.36684C4.70071 2.41817 4.31553 3.62639 3.86477 5.05171L3.0452 7.64318V11.3446H1.68749L1.68654 9.47999Z" fill="white" />
+                <path d="M19.3483 13.9617C16.0318 13.8521 15.1337 13.6185 14.5232 12.706C14.2765 12.3374 13.9996 11.5124 13.9114 10.8832C13.6018 8.67478 13.6779 4.0697 14.0499 2.48251C14.3869 1.04517 15.1793 0.341042 16.6249 0.194358C18.0449 0.0502267 21.7467 -0.0282559 25.3473 0.00937275C29.2345 0.0499579 31.0647 0.132271 31.7268 0.296291C33.0221 0.617008 33.6504 1.56142 33.8695 3.51623C33.9109 3.88579 33.9618 5.17605 33.9826 6.38339C34.0663 11.2573 33.6959 12.8078 32.2841 13.4924C31.751 13.751 31.4022 13.8104 29.8955 13.8994C28.2591 13.9961 21.581 14.0355 19.3483 13.9617ZM20.9798 11.3052C21.0943 11.2465 21.3219 11.0764 21.4856 10.9268L21.7833 10.6554V11.3444H23.0732V4.62499H21.7833V9.74948L21.4868 10.0429C21.1686 10.358 21.0399 10.3973 20.8718 10.2309C20.7782 10.1383 20.7651 9.7857 20.7651 7.37518V4.62493H19.4752V7.5357C19.4752 10.7467 19.5019 11.0008 19.8668 11.2703C20.0978 11.441 20.679 11.4591 20.9798 11.3052ZM27.1879 11.2834C27.3064 11.212 27.4705 11.0127 27.5613 10.8302C27.7206 10.51 27.7238 10.466 27.7461 8.28834C27.7705 5.90081 27.7317 5.46969 27.4483 4.98576C27.2909 4.71685 26.9155 4.49054 26.6267 4.49054C26.3485 4.49054 25.9499 4.67579 25.6459 4.94625L25.3134 5.2421V2.34033H24.0915V11.3443H25.3134V10.724L25.5921 10.9732C25.7454 11.1102 25.9669 11.2638 26.0843 11.3143C26.3995 11.4502 26.9367 11.4352 27.1879 11.2834ZM25.5679 10.1874L25.3134 10.0413V5.92029L25.6146 5.76212C25.8591 5.63378 25.9519 5.61651 26.1068 5.67033C26.4415 5.78671 26.4776 6.04339 26.4544 8.14173L26.4335 10.0123L26.243 10.1743C26.0098 10.3728 25.8952 10.3751 25.5679 10.1874ZM31.2873 11.2716C31.9433 10.9772 32.2387 10.4793 32.2904 9.58109L32.3243 8.9926H31.0156V9.39147C31.0156 9.87997 30.9391 10.0934 30.711 10.2413C30.454 10.408 30.1344 10.3021 29.9806 9.9991C29.8877 9.81627 29.8618 9.59345 29.8618 8.97574L29.8616 8.18621H32.3055V7.1996C32.3055 5.95785 32.2074 5.56208 31.7844 5.09643C31.4106 4.685 31.0101 4.52118 30.4047 4.5322C29.9028 4.54127 29.5674 4.66511 29.2152 4.97125C28.6395 5.47164 28.5522 5.91747 28.5866 8.18628C28.609 9.66045 28.6337 10.0196 28.7304 10.2731C28.8955 10.706 29.1937 11.0356 29.6032 11.2376C30.0648 11.4651 30.8218 11.4805 31.2873 11.2716ZM29.8617 6.67213C29.8617 5.83637 30.0783 5.5512 30.6234 5.66973C30.897 5.72926 31.0158 6.03244 31.0158 6.67219V7.1783H29.8617V6.67219L29.8617 6.67213ZM18.1854 7.48074V3.61709H19.6789V2.3404H15.4021V3.61709H16.8277V11.3444H18.1854V7.48074Z" fill="#D02726" />
+              </g>
+              <defs>
+                <clipPath id="clip0_312_22894">
+                  <rect width="34" height="14" fill="white" />
+                </clipPath>
+              </defs>
+            </svg>
+          </a>
+        </p>
+      </div>
+
+      <div class="team__item">
+        <img class="team__photo" src="./img/team_photo_2.jpg" width="174" height="182" alt="">
+
+        <div class="team__info">
+          <p class="team__name">Дмитрий Салов</p>
+          <p class="team__position">Руководитель / Контекстолог</p>
+          <p class="team__experience">В digital 8 лет</p>
+
+          <div class="team__tags">
+            <p class="team__tag">#таргет</p>
+            <p class="team__tag">#менеджмент</p>
+            <p class="team__tag">#менеджмент</p>
+          </div>
+        </div>
+
+        <div class="team__icon">
+          <img src="./img/team_icon_2.png" width="142" height="120" alt="">
+        </div>
+
+        <p class="team__desc">
+          Оперативно решаю все вопросы, веду конструктивный диалог. Мой подход к работе с прицелом на результат. Готов привести ваш бизнес к новым достижениям.
+        </p>
+      </div>
+
+      <div class="team__item">
+        <img class="team__photo" src="./img/team_photo_3.jpg" width="174" height="182" alt="">
+
+        <div class="team__info">
+          <p class="team__name">Артем Мулярчик</p>
+          <p class="team__position">Руководитель / Аналитик</p>
+          <p class="team__experience">В digital 4 года</p>
+
+          <div class="team__tags">
+            <p class="team__tag">#таргет</p>
+            <p class="team__tag">#менеджмент</p>
+            <p class="team__tag">#менеджмент</p>
+          </div>
+        </div>
+
+        <div class="team__icon">
+          <img src="./img/team_icon_3.png" width="143" height="120" alt="">
+        </div>
+
+        <p class="team__desc">
+          Яркий, отзывчивый и коммуникабельный. Хорошо разбираюсь в специфике Google и Яндекса, не упускаю ни одной цифры. Четко проанализирую ситуацию, всегда на связи.
+        </p>
+      </div>
+
+      <div class="team__item">
+        <img class="team__photo" src="./img/team_photo_4.jpg" width="174" height="182" alt="">
+
+        <div class="team__info">
+          <p class="team__name">Анна Ефимова</p>
+          <p class="team__position">Контекстолог</p>
+          <p class="team__experience">В digital 3 года</p>
+
+          <div class="team__tags">
+            <p class="team__tag">#таргет</p>
+            <p class="team__tag">#менеджмент</p>
+            <p class="team__tag">#менеджмент</p>
+          </div>
+        </div>
+
+        <div class="team__icon">
+          <img src="./img/team_icon_4.png" width="145" height="146" alt="">
+        </div>
+
+        <p class="team__desc">
+          Эксперт в Яндекс.Директе и контекстной рекламе. Активно изучаю новые технологии и постоянно учусь. Ответственно подхожу к работе.
+        </p>
+      </div>
+
+      <div class="team__item">
+        <img class="team__photo" src="./img/team_photo_5.jpg" width="174" height="182" alt="">
+
+        <div class="team__info">
+          <p class="team__name">Екатерина Степанова</p>
+          <p class="team__position">Контекстолог</p>
+          <p class="team__experience">В digital 3 года</p>
+
+          <div class="team__tags">
+            <p class="team__tag">#таргет</p>
+            <p class="team__tag">#менеджмент</p>
+            <p class="team__tag">#менеджмент</p>
+          </div>
+        </div>
+
+        <div class="team__icon">
+          <img src="./img/team_icon_4.png" width="145" height="146" alt="">
+        </div>
+
+        <p class="team__desc">
+          Стремлюсь следовать трендам. Эксперт в Яндекс.Директе и контекстной рекламе. Постоянно расширяю свои знания и умения через обучение и практику.
+        </p>
+      </div>
+
+      <div class="team__item">
+        <img class="team__photo" src="./img/team_photo_6.jpg" width="174" height="182" alt="">
+
+        <div class="team__info">
+          <p class="team__name">Варвара Степанова</p>
+          <p class="team__position">Дизайнер / Иллюстратор</p>
+          <p class="team__experience">В digital 4 года</p>
+
+          <div class="team__tags">
+            <p class="team__tag">#таргет</p>
+            <p class="team__tag">#менеджмент</p>
+            <p class="team__tag">#менеджмент</p>
+          </div>
+        </div>
+
+        <div class="team__icon">
+          <img src="./img/team_icon_6.png" width="144" height="121" alt="">
+        </div>
+
+        <p class="team__desc">
+          Сочетаю творческое мышление и маркетинговый подход. Могу создать баннер, который не только привлечет внимание, но и увеличит продажи. Мой дизайн не только красив, но и эффективен.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="order">
+  <div class="wrapper">
+    <h2 class="order__title">Заполните заявку онлайн</h2>
+    <p class="order__steps">1/4</p>
+    <div class="order__content">
+      <ul class="order__list">
+        <li>
+          <button class="order__btn btn btn--gray">Вебсайт</button>
+        </li>
+        <li>
+          <button class="order__btn btn btn--gray">Личный кабинет</button>
+        </li>
+        <li>
+          <button class="order__btn btn btn--gray">Реклама</button>
+        </li>
+        <li>
+          <button class="order__btn btn btn--gray">Видео-ролик</button>
+        </li>
+        <li>
+          <button class="order__btn btn btn--gray">Мобильное приложение</button>
+        </li>
+        <li>
+          <button class="order__btn btn btn--gray">Мобильное приложение</button>
+        </li>
+        <li>
+          <button class="order__btn btn btn--gray">Бренд для компании или продукта</button>
+        </li>
+        <li>
+          <button class="order__btn btn btn--gray">Наполнение сайта</button>
+        </li>
+      </ul>
+
+      <button class="order__control-btn btn btn--secondary">Далее</button>
+    </div>
+  </div>
+</section>
+
+<section class="clients">
+  <div class="wrapper">
+    <h2 class="cliennts__title">Клиенты которые работают с нами</h2>
+
+    <ul class="clients__list">
+      <li class="clients__item">
+        <img class="clients__img" src="./img/clients_logo_1.png" width="314" height="208" alt="">
+      </li>
+      <li class="clients__item">
+        <img class="clients__img" src="./img/clients_logo_2.png" width="314" height="208" alt="">
+      </li>
+      <li class="clients__item">
+        <img class="clients__img" src="./img/clients_logo_3.png" width="314" height="208" alt="">
+      </li>
+      <li class="clients__item">
+        <img class="clients__img" src="./img/clients_logo_4.png" width="314" height="208" alt="">
+      </li>
+      <li class="clients__item">
+        <img class="clients__img" src="./img/clients_logo_5.png" width="314" height="208" alt="">
+      </li>
+      <li class="clients__item">
+        <img class="clients__img" src="./img/clients_logo_6.png" width="314" height="208" alt="">
+      </li>
+      <li class="clients__item">
+        <img class="clients__img" src="./img/clients_logo_7.png" width="314" height="208" alt="">
+      </li>
+      <li class="clients__item">
+        <img class="clients__img" src="./img/clients_logo_8.png" width="314" height="208" alt="">
+      </li>
+      <li class="clients__item">
+        <img class="clients__img" src="./img/clients_logo_9.png" width="314" height="208" alt="">
+      </li>
+      <li class="clients__item">
+        <img class="clients__img" src="./img/clients_logo_10.png" width="314" height="208" alt="">
+      </li>
+      <li class="clients__item">
+        <img class="clients__img" src="./img/clients_logo_11.png" width="314" height="208" alt="">
+      </li>
+      <li class="clients__item">
+        <img class="clients__img" src="./img/clients_logo_12.png" width="314" height="208" alt="">
+      </li>
+      <li class="clients__item">
+        <img class="clients__img" src="./img/clients_logo_13.png" width="314" height="208" alt="">
+      </li>
+      <li class="clients__item">
+        <img class="clients__img" src="./img/clients_logo_14.png" width="314" height="208" alt="">
+      </li>
+      <li class="clients__item">
+        <img class="clients__img" src="./img/clients_logo_15.png" width="314" height="208" alt="">
+      </li>
+    </ul>
+  </div>
+</section>
+
 <section class="testimonials">
   <div class="wrapper">
-    <h2 class="testimonials__title text-caption">отзывы</h2>
+    <h2 class="testimonials__title">Отзывы</h2>
+    <p class="testimonials__caption">Почему ее заказывают?</p>
 
     <ul class="testimonials__list">
       <li class="testimonials__item">
-        <p class="testimonials__author">Oleg Dronov</p>
-        <img class="testimonials__stars" src="./img/stars.svg" width="170" height="23" alt="5 звёзд" />
-        <p class="testimonials__text">
-          Хочу поблагодарить за помощь, компанию Expert_Credit_Finance. Мне 21 год, кредитами никогда не пользовался.
-          Обратился в банк, отказывают. Деньги нужны на покупку авто, нашел в контакте Андрея, сделали с ним анализ
-          кредитной истории, выполнил рекомендации, нужно было показать банку что я платежеспособный и смогу платить по
-          кредиту. Через 2 месяца подали заявку, и банк дал мне денег, сейчас гоняю на своей машине.
-          <br />
-          И кстати я с другого города, удивило то что дистанционно можно все сделать. Рекомендую друзьям теперь.
-          Спасибо!
-        </p>
+        <img class="testimonials__logo" src="./img/testimonials_logo_1.png" width="186" height="40" alt="">
+        <img class="testimonials__img" src="./img/testimonials_img_1.jpg" width="318" height="449" alt="">
       </li>
       <li class="testimonials__item">
-        <p class="testimonials__author">onotole_ask</p>
-        <img class="testimonials__stars" src="./img/stars.svg" width="170" height="23" alt="5 звёзд" />
-        <p class="testimonials__text">
-          Очень квалифицированный специалист! Помог в кратчайшие сроки решить вопрос. Я остался очень доволен!
-          РЕКОМЕНДУЮ!!!
-        </p>
+        <img class="testimonials__logo" src="./img/testimonials_logo_2.png" width="193" height="44" alt="">
+        <img class="testimonials__img" src="./img/testimonials_img_1.jpg" width="318" height="449" alt="">
       </li>
       <li class="testimonials__item">
-        <p class="testimonials__author">katyusha.repina</p>
-        <img class="testimonials__stars" src="./img/stars.svg" width="170" height="23" alt="5 звёзд" />
-        <p class="testimonials__text">
-          Хочу оставить отзыв, компании Expert_Credit_Finance, а именно поблагодарить Андрея, настоящий профи своего
-          дела! Который помог решить мою ситуацию. Я получала отказы в банках, по не понятным причинам. Деньги нужны
-          были на развитие бизнеса. После консультации и анализа кредитной истории , сделала все по рекомендации Андрея.
-          Одобрили кредит в том банке где был у меня отказ , не понимаю как такое возможно, но я безумна рада. деньги
-          поступили на счет в течении дня. Еще раз спасибо большое. Однозначно рекомендую!
-        </p>
+        <img class="testimonials__logo" src="./img/testimonials_logo_3.png" width="240" height="46" alt="">
+        <img class="testimonials__img" src="./img/testimonials_img_1.jpg" width="318" height="449" alt="">
       </li>
       <li class="testimonials__item">
-        <p class="testimonials__author">Dmitry Smaglo</p>
-        <img class="testimonials__stars" src="./img/stars.svg" width="170" height="23" alt="5 звёзд" />
-        <p class="testimonials__text">
-          Хочу порекомендовать компанию Андрея! Обратился за рефинансированием кредитов, уже честно не справлялся. А
-          выходить на просрочку не хотелось. Самостоятельно обратился в два банка, отказы. Больше не стал
-          экспериментировать, товарищ посоветовал собственно Андрея, мы пообщались, посмотрели че и как, и сделали
-          подачу в конкретный банк и все получилось. Объединил все в один кредит, платеж уменьшили, что не может не
-          радовать. Если столкнулись с проблемами по кредитам, пишите Андрею. Все быстро и четко. Буду обращаться еще!
-        </p>
+        <img class="testimonials__logo" src="./img/testimonials_logo_4.png" width="217" height="49" alt="">
+        <img class="testimonials__img" src="./img/testimonials_img_1.jpg" width="318" height="449" alt="">
       </li>
     </ul>
   </div>
 </section>
 
-<section class="faq">
+<section class="reviews">
   <div class="wrapper">
-    <h2 class="faq__title text-title">FAQ</h2>
-    <p class="faq__caption text-caption">ЧАСТО ЗАДАВАЕМЫЕ ВОПРОСЫ</p>
+    <h2 class="reviews__title">Видеоотзывы</h2>
 
-    <ul class="faq__list">
-      <li class="faq__item">
-        <img class="faq__icon" src="./img/faq_icon.svg" width="97" height="97" alt="" />
-        <p class="faq__question">Вы гарантируете 100% результат?</p>
-        <p class="faq__answer">
-          Гарантию 100% могут дать только Господь Бог или мошенники. Результат работы будет зависеть только от
-          выполнения вами наших рекомендаций. Плюс за оказание услуги Вы платите в случае одобрения кредита в банке.
-        </p>
+    <ul class="reviews__list">
+      <li class="reviews__item">
+        <a class="reviews__preview" href="">
+          <img src="./img/reviews_preview.jpg" width="522" height="272" alt="">
+
+          <svg width="76" height="73" viewBox="0 0 76 73" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path class="play-bg" d="M38 0.59375C17.0146 0.59375 0 16.7129 0 36.5938C0 56.4745 17.0146 72.5938 38 72.5938C58.9852 72.5938 76 56.4745 76 36.5938C76 16.7129 58.9852 0.59375 38 0.59375ZM52.1108 37.0013L30.7358 49.0873C30.5827 49.1753 30.3878 49.1797 30.2302 49.0917C30.0772 49.0081 29.9798 48.8523 29.9798 48.6786V36.5925V24.5063C29.9798 24.335 30.0772 24.1768 30.2302 24.0932C30.3878 24.0075 30.5827 24.0119 30.7358 24.0975L52.1108 36.1859C52.2638 36.2683 52.3544 36.4275 52.3544 36.5923C52.3544 36.7607 52.264 36.9168 52.1108 37.0013Z" fill="black" />
+            <path class="play" d="M52.1076 37.0015L30.7326 49.0875C30.5795 49.1755 30.3846 49.1799 30.227 49.0918C30.0739 49.0083 29.9766 48.8525 29.9766 48.6788V36.5927V24.5065C29.9766 24.3352 30.0739 24.177 30.227 24.0933C30.3846 24.0077 30.5795 24.0121 30.7326 24.0977L52.1076 36.1861C52.2606 36.2685 52.3511 36.4277 52.3511 36.5925C52.3511 36.7608 52.2607 36.9169 52.1076 37.0015Z" fill="white" />
+          </svg>
+        </a>
+
+        <div class="reviews__info">
+          <img class="reviews__avatar" src="./img/banner_avatar.png" width="55" height="55" alt="">
+          <p class="reviews__author">Артем</p>
+          <p class="reviews__tag">АкваИнжиниринг</p>
+          <p class="reviews__text">“Контекст может похвастаться наиболее быстрыми результатами уже в первые дни запуска...</p>
+        </div>
       </li>
-      <li class="faq__item">
-        <img class="faq__icon" src="./img/faq_icon.svg" width="97" height="97" alt="" />
-        <p class="faq__question">Вы мошенник и ничего не сделаете?</p>
-        <p class="faq__answer">
-          Я работаю строго в рамках закона. С вами будет заключен официальный договор, следовательно, Вы будете защищены
-          законом О защите прав потребителей. Расчет со мной производится официально, через расчетный счет.  Вы
-          получаете кассовый чек за проведенную оплату.
-        </p>
+      <li class="reviews__item">
+        <a class="reviews__preview" href="">
+          <img src="./img/reviews_preview.jpg" width="522" height="272" alt="">
+
+          <svg width="76" height="73" viewBox="0 0 76 73" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path class="play-bg" d="M38 0.59375C17.0146 0.59375 0 16.7129 0 36.5938C0 56.4745 17.0146 72.5938 38 72.5938C58.9852 72.5938 76 56.4745 76 36.5938C76 16.7129 58.9852 0.59375 38 0.59375ZM52.1108 37.0013L30.7358 49.0873C30.5827 49.1753 30.3878 49.1797 30.2302 49.0917C30.0772 49.0081 29.9798 48.8523 29.9798 48.6786V36.5925V24.5063C29.9798 24.335 30.0772 24.1768 30.2302 24.0932C30.3878 24.0075 30.5827 24.0119 30.7358 24.0975L52.1108 36.1859C52.2638 36.2683 52.3544 36.4275 52.3544 36.5923C52.3544 36.7607 52.264 36.9168 52.1108 37.0013Z" fill="black" />
+            <path class="play" d="M52.1076 37.0015L30.7326 49.0875C30.5795 49.1755 30.3846 49.1799 30.227 49.0918C30.0739 49.0083 29.9766 48.8525 29.9766 48.6788V36.5927V24.5065C29.9766 24.3352 30.0739 24.177 30.227 24.0933C30.3846 24.0077 30.5795 24.0121 30.7326 24.0977L52.1076 36.1861C52.2606 36.2685 52.3511 36.4277 52.3511 36.5925C52.3511 36.7608 52.2607 36.9169 52.1076 37.0015Z" fill="white" />
+          </svg>
+        </a>
+
+        <div class="reviews__info">
+          <img class="reviews__avatar" src="./img/banner_avatar.png" width="55" height="55" alt="">
+          <p class="reviews__author">Артем</p>
+          <p class="reviews__tag">АкваИнжиниринг</p>
+          <p class="reviews__text">“Контекст может похвастаться наиболее быстрыми результатами уже в первые дни запуска...</p>
+        </div>
       </li>
-      <li class="faq__item">
-        <img class="faq__icon" src="./img/faq_icon.svg" width="97" height="97" alt="" />
-        <p class="faq__question">Где ваш офис? Как с вами встретиться?</p>
-        <p class="faq__answer">
-          Офис для приема находится в городе Ростов-на-Дону. Я работаю онлайн по всей России, с связи с этим основные
-          клиенты из других городов. Это не мешает нам сделать видеозвонок и обсудить условия, если мы захотим. Моя
-          работа - это доверие прежде всего.
-        </p>
+      <li class="reviews__item">
+        <a class="reviews__preview" href="">
+          <img src="./img/reviews_preview.jpg" width="522" height="272" alt="">
+
+          <svg width="76" height="73" viewBox="0 0 76 73" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path class="play-bg" d="M38 0.59375C17.0146 0.59375 0 16.7129 0 36.5938C0 56.4745 17.0146 72.5938 38 72.5938C58.9852 72.5938 76 56.4745 76 36.5938C76 16.7129 58.9852 0.59375 38 0.59375ZM52.1108 37.0013L30.7358 49.0873C30.5827 49.1753 30.3878 49.1797 30.2302 49.0917C30.0772 49.0081 29.9798 48.8523 29.9798 48.6786V36.5925V24.5063C29.9798 24.335 30.0772 24.1768 30.2302 24.0932C30.3878 24.0075 30.5827 24.0119 30.7358 24.0975L52.1108 36.1859C52.2638 36.2683 52.3544 36.4275 52.3544 36.5923C52.3544 36.7607 52.264 36.9168 52.1108 37.0013Z" fill="black" />
+            <path class="play" d="M52.1076 37.0015L30.7326 49.0875C30.5795 49.1755 30.3846 49.1799 30.227 49.0918C30.0739 49.0083 29.9766 48.8525 29.9766 48.6788V36.5927V24.5065C29.9766 24.3352 30.0739 24.177 30.227 24.0933C30.3846 24.0077 30.5795 24.0121 30.7326 24.0977L52.1076 36.1861C52.2606 36.2685 52.3511 36.4277 52.3511 36.5925C52.3511 36.7608 52.2607 36.9169 52.1076 37.0015Z" fill="white" />
+          </svg>
+        </a>
+
+        <div class="reviews__info">
+          <img class="reviews__avatar" src="./img/banner_avatar.png" width="55" height="55" alt="">
+          <p class="reviews__author">Артем</p>
+          <p class="reviews__tag">АкваИнжиниринг</p>
+          <p class="reviews__text">“Контекст может похвастаться наиболее быстрыми результатами уже в первые дни запуска...</p>
+        </div>
+      </li>
+      <li class="reviews__item">
+        <a class="reviews__preview" href="">
+          <img src="./img/reviews_preview.jpg" width="522" height="272" alt="">
+
+          <svg width="76" height="73" viewBox="0 0 76 73" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path class="play-bg" d="M38 0.59375C17.0146 0.59375 0 16.7129 0 36.5938C0 56.4745 17.0146 72.5938 38 72.5938C58.9852 72.5938 76 56.4745 76 36.5938C76 16.7129 58.9852 0.59375 38 0.59375ZM52.1108 37.0013L30.7358 49.0873C30.5827 49.1753 30.3878 49.1797 30.2302 49.0917C30.0772 49.0081 29.9798 48.8523 29.9798 48.6786V36.5925V24.5063C29.9798 24.335 30.0772 24.1768 30.2302 24.0932C30.3878 24.0075 30.5827 24.0119 30.7358 24.0975L52.1108 36.1859C52.2638 36.2683 52.3544 36.4275 52.3544 36.5923C52.3544 36.7607 52.264 36.9168 52.1108 37.0013Z" fill="black" />
+            <path class="play" d="M52.1076 37.0015L30.7326 49.0875C30.5795 49.1755 30.3846 49.1799 30.227 49.0918C30.0739 49.0083 29.9766 48.8525 29.9766 48.6788V36.5927V24.5065C29.9766 24.3352 30.0739 24.177 30.227 24.0933C30.3846 24.0077 30.5795 24.0121 30.7326 24.0977L52.1076 36.1861C52.2606 36.2685 52.3511 36.4277 52.3511 36.5925C52.3511 36.7608 52.2607 36.9169 52.1076 37.0015Z" fill="white" />
+          </svg>
+        </a>
+
+        <div class="reviews__info">
+          <img class="reviews__avatar" src="./img/banner_avatar.png" width="55" height="55" alt="">
+          <p class="reviews__author">Артем</p>
+          <p class="reviews__tag">АкваИнжиниринг</p>
+          <p class="reviews__text">“Контекст может похвастаться наиболее быстрыми результатами уже в первые дни запуска...</p>
+        </div>
+      </li>
+      <li class="reviews__item">
+        <a class="reviews__preview" href="">
+          <img src="./img/reviews_preview.jpg" width="522" height="272" alt="">
+
+          <svg width="76" height="73" viewBox="0 0 76 73" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path class="play-bg" d="M38 0.59375C17.0146 0.59375 0 16.7129 0 36.5938C0 56.4745 17.0146 72.5938 38 72.5938C58.9852 72.5938 76 56.4745 76 36.5938C76 16.7129 58.9852 0.59375 38 0.59375ZM52.1108 37.0013L30.7358 49.0873C30.5827 49.1753 30.3878 49.1797 30.2302 49.0917C30.0772 49.0081 29.9798 48.8523 29.9798 48.6786V36.5925V24.5063C29.9798 24.335 30.0772 24.1768 30.2302 24.0932C30.3878 24.0075 30.5827 24.0119 30.7358 24.0975L52.1108 36.1859C52.2638 36.2683 52.3544 36.4275 52.3544 36.5923C52.3544 36.7607 52.264 36.9168 52.1108 37.0013Z" fill="black" />
+            <path class="play" d="M52.1076 37.0015L30.7326 49.0875C30.5795 49.1755 30.3846 49.1799 30.227 49.0918C30.0739 49.0083 29.9766 48.8525 29.9766 48.6788V36.5927V24.5065C29.9766 24.3352 30.0739 24.177 30.227 24.0933C30.3846 24.0077 30.5795 24.0121 30.7326 24.0977L52.1076 36.1861C52.2606 36.2685 52.3511 36.4277 52.3511 36.5925C52.3511 36.7608 52.2607 36.9169 52.1076 37.0015Z" fill="white" />
+          </svg>
+        </a>
+
+        <div class="reviews__info">
+          <img class="reviews__avatar" src="./img/banner_avatar.png" width="55" height="55" alt="">
+          <p class="reviews__author">Артем</p>
+          <p class="reviews__tag">АкваИнжиниринг</p>
+          <p class="reviews__text">“Контекст может похвастаться наиболее быстрыми результатами уже в первые дни запуска...</p>
+        </div>
+      </li>
+      <li class="reviews__item">
+        <a class="reviews__preview" href="">
+          <img src="./img/reviews_preview.jpg" width="522" height="272" alt="">
+
+          <svg width="76" height="73" viewBox="0 0 76 73" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path class="play-bg" d="M38 0.59375C17.0146 0.59375 0 16.7129 0 36.5938C0 56.4745 17.0146 72.5938 38 72.5938C58.9852 72.5938 76 56.4745 76 36.5938C76 16.7129 58.9852 0.59375 38 0.59375ZM52.1108 37.0013L30.7358 49.0873C30.5827 49.1753 30.3878 49.1797 30.2302 49.0917C30.0772 49.0081 29.9798 48.8523 29.9798 48.6786V36.5925V24.5063C29.9798 24.335 30.0772 24.1768 30.2302 24.0932C30.3878 24.0075 30.5827 24.0119 30.7358 24.0975L52.1108 36.1859C52.2638 36.2683 52.3544 36.4275 52.3544 36.5923C52.3544 36.7607 52.264 36.9168 52.1108 37.0013Z" fill="black" />
+            <path class="play" d="M52.1076 37.0015L30.7326 49.0875C30.5795 49.1755 30.3846 49.1799 30.227 49.0918C30.0739 49.0083 29.9766 48.8525 29.9766 48.6788V36.5927V24.5065C29.9766 24.3352 30.0739 24.177 30.227 24.0933C30.3846 24.0077 30.5795 24.0121 30.7326 24.0977L52.1076 36.1861C52.2606 36.2685 52.3511 36.4277 52.3511 36.5925C52.3511 36.7608 52.2607 36.9169 52.1076 37.0015Z" fill="white" />
+          </svg>
+        </a>
+
+        <div class="reviews__info">
+          <img class="reviews__avatar" src="./img/banner_avatar.png" width="55" height="55" alt="">
+          <p class="reviews__author">Артем</p>
+          <p class="reviews__tag">АкваИнжиниринг</p>
+          <p class="reviews__text">“Контекст может похвастаться наиболее быстрыми результатами уже в первые дни запуска...</p>
+        </div>
       </li>
     </ul>
   </div>
 </section>
-
-<section class="partnership-promo">
-  <div class="wrapper">
-    <h2 class="partnership-promo__title text-caption">
-      Приглашаем вас стать нашим партнёром на взаимовыгодных условиях!
-    </h2>
-    <p class="partnership-promo__text">
-      От вас только контакт заинтересованного в кредитовании человека, от нас- грамотная работа с клиентом, решение его
-      задачи и оплата вам вознаграждения за приведённого клиента.
-    </p>
-
-    <a class="partnership-promo__btn btn" data-bs-toggle="collapse" href="#partnership" role="button" aria-expanded="false" aria-controls="partnership">Узнать больше</a>
-
-    <img class="partnership-promo__img" src="./img/partnership_icon.svg" width="348" height="372" alt="" />
-  </div>
-</section>
-
-<section class="partnership collapse" id="partnership">
-  <section class="partnership-banner">
-    <div class="wrapper">
-      <h2 class="partnership-banner__title text-caption">
-        ПОМОЩЬ В ПОЛУЧЕНИИ КРЕДИТА НА ЛИЧНЫЕ ЦЕЛИ И&nbsp;РАЗВИТИЕ БИЗНЕСА
-      </h2>
-
-      <a class="partnership-banner__btn btn" href="#callback">Оставить заявку</a>
-      <img class="partnership-banner__img" src="./img/partnership-banner.svg" width="428" height="428" alt="" />
-    </div>
-  </section>
-
-  <section class="partnership-offer">
-    <div class="wrapper">
-      <h2 class="partnership-offer__title text-caption">
-        Что мы предлагаем нашим партнерам?
-      </h2>
-
-      <ul class="services__approval-list">
-        <li class="services__approval-item">
-          <img class="services__approval-icon" src="./img/partnership-offer_icon_1.svg" width="67" height="67" alt="" />
-          <p class="services__approval-name">
-            Мы платим за каждого приведённого клиента
-            в случае получения одобрения и оплаты
-            наших услуг.
-          </p>
-        </li>
-        <li class="services__approval-item">
-          <img class="services__approval-icon" src="./img/partnership-offer_icon_2.svg" width="67" height="67" alt="" />
-          <p class="services__approval-name">
-            Сумма вознаграждения партнеру составляет20%
-            от нашего вознаграждения, т.е. от 10 000рублей
-            И БОЛЬШЕ (в зависимости
-            от суммы полученного одобрения).
-          </p>
-        </li>
-        <li class="services__approval-item">
-          <img class="services__approval-icon" src="./img/partnership-offer_icon_3.svg" width="67" height="67" alt="" />
-          <p class="services__approval-name">
-            Обязательно по всем направленным клиентам
-            даём обратную связь.
-          </p>
-        </li>
-      </ul>
-    </div>
-  </section>
-
-  <section class="partnership-about">
-    <div class="wrapper">
-      <h2 class="partnership-about__title text-caption">
-        КАК МЫ РАБОТАЕМ?
-      </h2>
-
-      <ul class="partnership-about__list">
-        <li class="partnership-about__item">
-          <div class="partnership-about__icon"><img src="./img/partnership-about_icon_1.svg" alt=""></div>
-          <p class="partnership-about__text">
-            <strong>Вы присылаете данные по клиенту</strong> (по согласованию
-            с самим клиентом!) на наш WhatsApp +7 989 728 06 26: номер телефона клиента (собственника Юр. лица),
-            имя и город.
-          </p>
-        </li>
-        <li class="partnership-about__item">
-          <div class="partnership-about__icon from-left"><img src="./img/partnership-about_icon_2.svg" alt=""></div>
-          <p class="partnership-about__text">
-            <strong>Мы проводим интервью с клиентом</strong>
-            на предмет возможности получения
-            им кредита.
-          </p>
-        </li>
-        <li class="partnership-about__item">
-          <div class="partnership-about__icon from-left"><img src="./img/partnership-about_icon_3.svg" alt=""></div>
-          <p class="partnership-about__text">
-            В случае положительного вердикта с нашей стороны:
-            <strong>мы направляем клиенту договор и анкету для заполнения.</strong>
-          </p>
-        </li>
-        <li class="partnership-about__item">
-          <div class="partnership-about__icon from-right"><img src="./img/partnership-about_icon_6.svg" alt=""></div>
-          <p class="partnership-about__text">
-            <strong>Ваше вознаграждение</strong>
-            за приведённого клиента
-            мы переводим вам на вашу карту сразу: в
-            <strong>
-              день получения вознаграждения от клиента без задержек.
-            </strong>
-          </p>
-        </li>
-        <li class="partnership-about__item">
-          <div class="partnership-about__icon from-right"><img src="./img/partnership-about_icon_5.svg" alt=""></div>
-          <p class="partnership-about__text">
-            <strong>
-              После получения положительного решения
-              от банка мы доводим эту информацию до вас
-            </strong>
-            (в случае отказов - также
-            вас уведомляем).
-          </p>
-        </li>
-        <li class="partnership-about__item">
-          <div class="partnership-about__icon from-right"><img src="./img/partnership-about_icon_4.svg" alt=""></div>
-          <p class="partnership-about__text">
-            Как только нам поступают
-            все необходимые документы
-            <strong>мы начинаем работу.</strong>
-          </p>
-        </li>
-      </ul>
-    </div>
-  </section>
-</section>
-
-<section class="callback" id="callback">
-  <div class="wrapper">
-    <h2 class="callback__title text-caption">
-      ОСТАВЬТЕ ЗАЯВКУ<br />
-      НА БЕСПЛАТНУЮ КОНСУЛЬТАЦИЮ
-    </h2>
-
-    <form class="callback__form" method="post" action="">
-      <input class="callback__input" type="text" name="name" placeholder="Ваше имя" required />
-      <input class="callback__input" type="text" name="phone" placeholder="Телефон" required />
-      <div class="callback__submit-wrap">
-        <button class="callback__submit btn" type="submit">Отправить</button>
-        <p>
-          Нажимая кнопку «Отправить»,<br />
-          вы даете согласие с Политикой конфиденциальности
-        </p>
-      </div>
-    </form>
-  </div>
-</section>
-
-<div class="modal" id="modal-success">
-  <div class="modal__window">
-    <p class="modal__text">
-      Спасибо!<br>
-      Ваша заявка отправлена.
-    </p>
-    <button class="modal__close btn">Закрыть</button>
-  </div>
-</div>
 
 @@include('./_footer.html')

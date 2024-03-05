@@ -103,6 +103,30 @@
     position: relative;
     display: flex !important;
     flex-direction: column;
+
+    &:nth-child(1) {
+      .rates__photo {
+        right: -69px;
+      }
+    }
+
+    &:nth-child(2) {
+      .rates__photo {
+        right: -67px;
+      }
+    }
+
+    &:nth-child(3) {
+      .rates__photo {
+        right: -28px;
+      }
+    }
+
+    &:nth-child(4) {
+      .rates__photo {
+        right: -37px;
+      }
+    }
   }
 
   &__caption {

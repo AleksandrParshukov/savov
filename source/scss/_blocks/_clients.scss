@@ -1,0 +1,40 @@
+.clients {
+  margin-top: 140px;
+
+  &__title {
+    font-family: $secondary-font;
+    font-weight: 600;
+    font-size: 52px;
+    color: #4f4f4f;
+    margin-bottom: 65px;
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    gap: 33px 0;
+  }
+
+  &__item {
+    border-radius: 26px;
+    display: flex;
+    transition: 0.3s ease;
+    cursor: pointer;
+
+    &:hover {
+      background-color: #d4deef;
+
+      .clients__img {
+        filter: none;
+      }
+    }
+  }
+
+  &__img {
+    width: 314px;
+    height: 208px;
+    margin: auto;
+    filter: grayscale(1) brightness(1.5);
+    transition: 0.3s ease;
+  }
+}

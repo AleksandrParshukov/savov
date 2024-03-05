@@ -29,6 +29,7 @@ function init_carousel() {
     infinite: true,
     arrows: false,
   });
+
   $('.rates__slider').slick({
     dots: false,
     infinite: true,
@@ -36,6 +37,26 @@ function init_carousel() {
     speed: 500,
     fade: true,
     cssEase: 'linear',
+  });
+
+  $('.cases__slider').slick({
+    dots: true,
+    infinite: true,
+    arrows: false,
+    speed: 500,
+    fade: true,
+    cssEase: 'linear',
+  });
+
+  $('.js_rates_btn').on('click', function (evt) {
+    evt.preventDefault();
+
+    const $btn = $(this),
+      to_item = $btn.data('item');
+
+    $('.rates__slider').slick('slickGoTo', to_item);
+    $('.js_rates_btn').removeClass('active');
+    $btn.addClass('active');
   });
 }
 

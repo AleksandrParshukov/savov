@@ -1,0 +1,123 @@
+.team {
+  margin-top: 225px;
+
+  &__title {
+    font-family: $secondary-font;
+    font-weight: 800;
+    font-size: 70px;
+    line-height: 1.534;
+    color: #4f4f4f;
+    margin-bottom: 80px;
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(3, 507px);
+    gap: 50px 70px;
+  }
+
+  &__item {
+    display: grid;
+    grid-template-columns: min-content 1fr;
+    gap: 27px 33px;
+  }
+
+  &__photo {
+    width: 174px;
+    height: 182px;
+    border-radius: 13px;
+  }
+
+  &__info {
+    font-family: $secondary-font;
+
+    > p {
+      margin-left: 7px;
+    }
+  }
+
+  &__name {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1;
+    color: #f2f2f2;
+    width: min-content;
+  }
+
+  &__position {
+    font-weight: 300;
+    font-size: 16px;
+    color: #f2f2f2;
+    margin-block: 7px;
+  }
+
+  &__experience {
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 1.3;
+    color: #f2f2f2;
+  }
+
+  &__tags {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  &__tag {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.3;
+    color: #f2f2f2;
+    width: max-content;
+    padding: 6px 17px;
+    border: 1px solid #4d4e4f;
+    border-radius: 58px;
+  }
+
+  &__icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
+    > img {
+      max-width: 143px;
+      height: auto;
+    }
+
+    &::before {
+      content: '';
+      width: 173px;
+      height: 95px;
+      background-color: #282828;
+      border-radius: 14px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: -1;
+    }
+  }
+
+  &__desc {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.2;
+    color: #f2f2f2;
+
+    > a {
+      font-weight: 700;
+      font-size: 12px;
+      color: #fff;
+      width: max-content;
+      padding: 5px 9px 7px;
+      margin-top: 15px;
+      background-color: #000;
+      border-radius: 55px;
+      display: flex;
+      gap: 8px;
+    }
+  }
+}

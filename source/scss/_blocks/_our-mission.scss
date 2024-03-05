@@ -1,0 +1,16 @@
+.our-mission {
+  font-family: $secondary-font;
+  font-weight: 700;
+  font-size: 70px;
+  line-height: 1.1;
+  text-align: center;
+  color: #e2eaf0;
+  padding-block: 45px 77px;
+  margin-top: 300px;
+  background: transparent url('../img/our_mission_bg.png') no-repeat center / contain;
+
+  p {
+    max-width: 1394px;
+    margin-inline: auto;
+  }
+}
