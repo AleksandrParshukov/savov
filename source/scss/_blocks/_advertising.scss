@@ -1,0 +1,58 @@
+.advertising {
+  margin-top: 140px;
+
+  &__title {
+    font-family: $secondary-font;
+    font-weight: 800;
+    font-size: 70px;
+    line-height: 1;
+    color: #4f4f4f;
+    margin-bottom: 30px;
+  }
+
+  &__caption {
+    font-family: $secondary-font;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 1;
+    color: #898f99;
+  }
+
+  &__list {
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-between;
+    gap: 33px;
+  }
+
+  &__item {
+    color: #000;
+    padding: 45px 50px 45px 40px;
+    background-color: #d4deef;
+    border-radius: 24px;
+
+    &:nth-child(2n) {
+      color: #f9f9f9;
+      background-color: #3d3d3d;
+    }
+  }
+
+  &__icon {
+    width: 100px;
+    height: auto;
+    aspect-ratio: 1 / 1;
+  }
+
+  &__name {
+    font-weight: 600;
+    font-size: 28px;
+    margin-block: 30px;
+  }
+
+  &__desc {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.2;
+    opacity: 0.65;
+  }
+}

@@ -1,0 +1,144 @@
+.steps {
+  &__title {
+    font-family: $secondary-font;
+    font-weight: 700;
+    font-size: 70px;
+    line-height: 1.1;
+    color: #4f4f4f;
+    margin-bottom: 30px;
+  }
+
+  &__content {
+    display: grid;
+    grid-template-columns: repeat(5, max-content);
+    justify-content: space-between;
+    position: relative;
+    gap: 30px 0;
+  }
+
+  &__top-item {
+    font-weight: 600;
+    font-size: 26px;
+    color: #fff;
+    width: max-content;
+    padding: 20px 34px;
+    border: 1px solid #515151;
+    border-radius: 84px;
+    margin-top: auto;
+  }
+
+  &__top-quote {
+    font-family: $secondary-font;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 1.175;
+    color: #fff;
+    text-align: center;
+    width: max-content;
+    padding-top: 20px;
+    margin-left: auto;
+    margin-right: 40px;
+    position: relative;
+    grid-column: span 2;
+
+    &::before {
+      content: '';
+      width: 258px;
+      height: 159px;
+      background: transparent url('../img/steps_top_quote.svg') no-repeat center / contain;
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: -1;
+    }
+
+    &::after {
+      content: '';
+      width: 1px;
+      height: 30px;
+      background-color: #fff;
+      display: block;
+      position: absolute;
+      top: 100%;
+      left: 85px;
+      transform: translateX(-50%);
+    }
+
+    > span {
+      font-weight: 700;
+      font-size: 40px;
+      color: #d4deef;
+    }
+  }
+
+  &__bg {
+    width: 100vw;
+    height: 1px;
+    background-color: #fff;
+    opacity: 1;
+    position: absolute;
+    top: 205px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  &__top-items {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    gap: 22px;
+    grid-column: span 2;
+  }
+
+  &__list-wrap {
+    &:nth-child(4) {
+      width: 396px;
+    }
+
+    &:nth-child(5) {
+      width: 495px;
+      grid-column: span 2;
+    }
+
+    &:nth-child(6) {
+      width: 417px;
+    }
+  }
+
+  &__list-name {
+    font-family: $secondary-font;
+    font-weight: 600;
+    font-size: 56px;
+    line-height: 1;
+    color: #3d3d3d;
+    display: flex;
+    align-items: end;
+
+    &::before {
+      content: '';
+      width: 1px;
+      height: 68px;
+      background-color: #fff;
+      margin-right: 15px;
+    }
+
+    > span {
+      font-size: 32px;
+      margin-bottom: 5px;
+      margin-left: 10px;
+    }
+  }
+
+  &__list {
+    font-weight: 600;
+    font-size: 26px;
+    color: #fff;
+    list-style: outside;
+    max-width: 340px;
+    margin-left: 0.7em;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+}

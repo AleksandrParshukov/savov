@@ -1,0 +1,97 @@
+:root {
+  --gray100: #161616;
+  --gray90: #262626;
+  --white: #fff;
+  ---back-2: #282828;
+  ---tekts-bold-: #e2eaf0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+*:active,
+*:focus {
+  outline: none;
+}
+
+html {
+  min-height: 100vh;
+  height: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: 'Montserrat';
+  font-weight: 400;
+  font-style: normal;
+  font-size: 14px;
+  line-height: normal;
+  color: $white;
+  height: 100%;
+  background-color: #181818;
+  scroll-behavior: smooth;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
+}
+
+a,
+input {
+  font: inherit;
+  color: inherit;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+a:hover {
+  color: $secondary;
+}
+
+a.btn:focus {
+  box-shadow: none;
+}
+
+input:focus {
+  outline: none;
+}
+
+p {
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+button {
+  padding: 0;
+  background-color: transparent;
+  border: none;
+}
+
+@media (max-width: 1700px) {
+  body {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 800px) {
+  body {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 560px) {
+  body {
+    font-size: 16px;
+  }
+}

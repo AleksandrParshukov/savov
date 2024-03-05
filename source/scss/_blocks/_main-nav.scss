@@ -1,0 +1,25 @@
+.main-nav {
+  font-family: $secondary-font;
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+
+  &__list {
+    margin-inline: auto;
+    display: flex;
+    gap: 53px;
+  }
+
+  &__link {
+    font-weight: 300;
+    font-size: 16px;
+    color: #eee;
+  }
+
+  &__phone {
+    font-weight: 600;
+    font-size: 18px;
+    color: #eee;
+    margin-right: 35px;
+  }
+}

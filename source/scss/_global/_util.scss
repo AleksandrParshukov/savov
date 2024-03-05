@@ -1,0 +1,112 @@
+.wrapper {
+  max-width: 1641px;
+  margin-inline: auto;
+}
+
+.btn {
+  font-weight: 700;
+  font-size: 20px;
+  color: #eee;
+  padding: 10px 40px;
+  border: 1px solid #eee;
+  border-radius: 123px;
+
+  &:hover {
+    color: $white;
+    background-color: $secondary;
+  }
+
+  &--gray {
+    border: none;
+    background: #4d4e4f;
+  }
+
+  &--secondary {
+    background-color: $secondary;
+    border: none;
+
+    &:hover {
+      color: $white;
+      background-color: $primary;
+    }
+  }
+}
+
+.text-title {
+  font-weight: 500;
+  font-size: 38px;
+  color: $secondary;
+}
+
+.text-caption {
+  font-weight: 800;
+  font-size: 70px;
+  text-transform: uppercase;
+}
+
+@media (max-width: 1700px) {
+  .wrapper {
+    max-width: 1225px;
+  }
+
+  .btn {
+    font-size: 18px;
+    border-radius: 36px;
+  }
+
+  .text-title {
+    font-size: 28px;
+  }
+
+  .text-caption {
+    font-size: 52px;
+  }
+}
+
+@media (max-width: 1300px) {
+  .wrapper {
+    max-width: 800px;
+  }
+
+  .text-caption {
+    font-size: 45px;
+  }
+}
+
+@media (max-width: 800px) {
+  .wrapper {
+    max-width: 540px;
+  }
+
+  .btn {
+    font-size: 16px;
+    border-radius: 24px;
+  }
+
+  .text-title {
+    font-size: 24px;
+  }
+
+  .text-caption {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 560px) {
+  .wrapper {
+    max-width: 100%;
+  }
+
+  .btn {
+    font-size: 16px;
+    border-radius: 24px;
+  }
+
+  .text-title {
+    font-size: 20px;
+  }
+
+  .text-caption {
+    font-size: 28px;
+  }
+}

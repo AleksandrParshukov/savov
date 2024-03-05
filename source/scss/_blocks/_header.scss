@@ -1,0 +1,14 @@
+.header {
+  color: $white;
+
+  .wrapper {
+    padding-block: 40px 22px;
+    border-bottom: 1px solid #d6d6d6;
+    display: flex;
+    align-items: center;
+  }
+
+  &__menu-toggle {
+    display: none;
+  }
+}

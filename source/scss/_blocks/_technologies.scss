@@ -1,0 +1,49 @@
+.technologies {
+  margin-top: 140px;
+
+  &__title {
+    font-family: $secondary-font;
+    font-weight: 800;
+    font-size: 70px;
+    line-height: 1.534;
+    color: #4f4f4f;
+    margin-bottom: 60px;
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 45px 30px;
+  }
+
+  &__item {
+    flex-basis: 20%;
+    flex-grow: 1;
+    display: grid;
+    grid-template-columns: min-content 1fr;
+    gap: 16px 26px;
+
+    > img {
+      width: 77px;
+      height: 62px;
+      object-fit: contain;
+      grid-column: 1 / 2;
+      grid-row: 1 / span 2;
+    }
+  }
+
+  &__name {
+    font-family: $secondary-font;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 1.534;
+    color: #bbb;
+  }
+
+  &__desc {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.2;
+    color: #7a7a7a;
+  }
+}
