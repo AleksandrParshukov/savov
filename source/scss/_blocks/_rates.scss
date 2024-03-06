@@ -186,3 +186,145 @@
     z-index: -1;
   }
 }
+
+@media (max-width: 560px) {
+  .rates {
+    margin-top: 50px;
+
+    .wrapper {
+      display: flex;
+      flex-direction: column;
+      gap: 35px;
+    }
+
+    &__title {
+      font-size: 34px;
+      line-height: 0.89;
+      margin-bottom: 40px;
+    }
+
+    &__control {
+      > li {
+        &:nth-child(1) {
+          padding: 0 8px 8px 0;
+          border-radius: 0 0 0 12px;
+        }
+
+        &:nth-child(2) {
+          padding: 0 0 8px 8px;
+          border-radius: 0 0 0 12px;
+        }
+
+        &:nth-child(3) {
+          padding: 8px 8px 0 0;
+          border-radius: 0 12px 0 0;
+        }
+
+        &:nth-child(4) {
+          padding: 8px 0 0 8px;
+          border-radius: 0 12px 0 0;
+        }
+      }
+    }
+
+    &__btn {
+      padding: 16px 14px;
+      border-radius: 12px;
+    }
+
+    &__name {
+      font-size: 12px;
+      color: #fff;
+    }
+
+    &__price {
+      font-weight: 800;
+      font-size: 26px;
+      letter-spacing: -0.05em;
+    }
+
+    &__more {
+      font-size: 12px;
+      line-height: 1;
+      width: min-content;
+      margin: 33px 0 0 auto;
+      align-items: center;
+
+      > svg {
+        margin-top: 0;
+        margin-left: 3px;
+        align-self: center;
+      }
+    }
+
+    &__slider {
+      width: 100%;
+    }
+
+    .slick-track {
+      display: flex !important;
+    }
+
+    .slick-slide {
+      height: auto;
+    }
+
+    &__item {
+      height: auto;
+      padding: 16px 12px;
+      border-radius: 12px;
+    }
+
+    &__caption {
+      font-weight: 700;
+      font-size: 26px;
+      letter-spacing: -0.05em;
+      color: #f9f9f9;
+    }
+
+    &__desc {
+      font-weight: 400;
+      font-size: 12px;
+      color: #fff;
+      max-width: 210px;
+      margin-block: 5px 13px;
+    }
+
+    &__steps {
+      width: 100%;
+      height: auto;
+      margin-block: auto;
+    }
+
+    &__item-bottom {
+      margin-top: 45px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 23px;
+
+      > p {
+        font-size: 18px;
+
+        > img {
+          width: 65px;
+          height: 54px;
+        }
+      }
+    }
+
+    &__link {
+      font-weight: 700;
+      font-size: 20px;
+      text-align: center;
+      color: #282828;
+      padding: 14px 46px;
+      margin-inline: auto;
+      border-radius: 123px;
+    }
+
+    &__photo {
+      display: none !important;
+    }
+  }
+}

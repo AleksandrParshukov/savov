@@ -14,3 +14,12 @@
     margin-inline: auto;
   }
 }
+
+@media (max-width: 560px) {
+  .our-mission {
+    font-size: 32px;
+    padding-block: 27px 50px;
+    margin-top: 160px;
+    background: transparent url('../img/our_mission_bg.png') no-repeat center / contain;
+  }
+}

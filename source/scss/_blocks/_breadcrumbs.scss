@@ -23,3 +23,16 @@
     }
   }
 }
+
+@media (max-width: 560px) {
+  .breadcrumbs {
+    list-style: none;
+    padding-left: 9px;
+    margin-block: 13px;
+
+    &__item {
+      font-size: 10px;
+      line-height: 1.49023;
+    }
+  }
+}

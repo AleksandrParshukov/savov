@@ -12,3 +12,22 @@
     display: none;
   }
 }
+
+@media (max-width: 560px) {
+  .header {
+    padding-top: 16px;
+
+    .wrapper {
+      border-radius: 17px;
+      padding: 20px 18px 18px 24px;
+      background-color: #282828;
+      border-bottom: none;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    &__menu-toggle {
+      display: block;
+    }
+  }
+}

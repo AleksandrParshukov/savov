@@ -1,0 +1,176 @@
+.callback {
+  padding-block: 45px 300px;
+  margin-top: 140px;
+  background: transparent url('../img/callback_bg.png') no-repeat center / contain;
+
+  &__title {
+    font-family: $secondary-font;
+    font-weight: 700;
+    font-size: 70px;
+    line-height: 1;
+    text-align: center;
+    color: #e2eaf0;
+    margin-bottom: 155px;
+  }
+
+  &__form {
+    width: 798px;
+    padding: 50px 70px;
+    margin-inline: auto;
+    backdrop-filter: blur(15px);
+    background-color: rgba(57, 59, 63, 0.7);
+    border-radius: 24px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__form-title {
+    font-family: $secondary-font;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 1.2;
+    text-align: center;
+    color: #fff;
+    margin-bottom: 27px;
+  }
+
+  &__form-text {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.2;
+    text-align: center;
+    color: #fff;
+    margin-bottom: 73px;
+  }
+
+  &__input {
+    padding-bottom: 15px;
+    margin-bottom: 40px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #fff;
+  }
+
+  &__file {
+    margin-bottom: 20px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+
+    > input {
+      display: none;
+    }
+  }
+
+  &__btn {
+    font-weight: 400;
+    font-size: 14px;
+    color: #d4deef;
+    width: max-content;
+    padding: 10px 24px;
+    border: 1px solid #d4deef;
+    border-radius: 123px;
+  }
+
+  &__bottom {
+    margin-top: 58px;
+    display: flex;
+    gap: 82px;
+    align-items: center;
+  }
+
+  &__submit {
+    font-weight: 700;
+    font-size: 20px;
+    text-align: center;
+    color: #f9f9f9;
+    width: max-content;
+    padding: 14px 46px;
+    background: #282828;
+    border-radius: 123px;
+  }
+
+  &__note {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.43233;
+    color: #fff;
+
+    a {
+      text-decoration: underline;
+      text-decoration-skip-ink: none;
+      color: #d4deef;
+    }
+  }
+}
+
+@media (max-width: 560px) {
+  .callback {
+    padding-block: 0;
+    margin-top: 90px;
+    background: transparent url('../img/callback_bg_mobile.png') no-repeat center / cover;
+
+    &__title {
+      font-size: 32px;
+      line-height: 1.1;
+      margin-bottom: 47px;
+    }
+
+    &__form {
+      width: 310px;
+      padding: 20px 30px;
+      border-radius: 24px;
+    }
+
+    &__form-title {
+      font-size: 18px;
+      line-height: 1;
+    }
+
+    &__form-text {
+      font-size: 10px;
+      margin-bottom: 30px;
+    }
+
+    &__input {
+      padding-bottom: 7px;
+      margin-bottom: 30px;
+    }
+
+    &__file {
+      margin-bottom: 10px;
+      flex-direction: column;
+      gap: 8px;
+
+      > p {
+        font-weight: 400;
+        font-size: 10px;
+        line-height: 1.2;
+        text-align: center;
+        color: #fff;
+        text-align: center;
+        max-width: 145px;
+      }
+    }
+
+    &__btn {
+      margin-inline: auto;
+    }
+
+    &__bottom {
+      margin-top: 21px;
+      gap: 10px;
+      flex-direction: column;
+    }
+
+    &__submit {
+      font-weight: 700;
+      font-size: 15px;
+    }
+
+    &__note {
+      font-size: 10px;
+      text-align: center;
+    }
+  }
+}

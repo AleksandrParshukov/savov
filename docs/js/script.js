@@ -30,17 +30,10 @@ function init_carousel() {
     arrows: false,
   });
 
+  /* ============= Rates Start ============ */
+
   $('.rates__slider').slick({
     dots: false,
-    infinite: true,
-    arrows: false,
-    speed: 500,
-    fade: true,
-    cssEase: 'linear',
-  });
-
-  $('.cases__slider').slick({
-    dots: true,
     infinite: true,
     arrows: false,
     speed: 500,
@@ -58,6 +51,70 @@ function init_carousel() {
     $('.js_rates_btn').removeClass('active');
     $btn.addClass('active');
   });
+
+  /* ============= Rates End ============ */
+
+  $('.cases__slider').slick({
+    dots: true,
+    infinite: true,
+    arrows: false,
+    speed: 500,
+    fade: true,
+    cssEase: 'linear',
+  });
+
+  $('.js_videos_list').slick({
+    dots: false,
+    infinite: true,
+    arrows: true,
+    prevArrow: $('.videos__nav--prev'),
+    nextArrow: $('.videos__nav--next'),
+    speed: 500,
+    fade: true,
+    cssEase: 'linear',
+  });
+
+  if ($(window).width() <= 560) {
+    $('.js_technologies_slider').slick({
+      dots: true,
+      infinite: true,
+      arrows: false,
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      rows: 2,
+    });
+
+    $('.js_team_slider').slick({
+      dots: true,
+      infinite: true,
+      arrows: false,
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      rows: 2,
+    });
+
+    $('.js_clients_slider').slick({
+      dots: true,
+      infinite: true,
+      arrows: false,
+      slidesToShow: 2,
+      slidesToScroll: 2,
+      rows: 3,
+    });
+
+    $('.js_testimonials_slider').slick({
+      dots: true,
+      infinite: true,
+      arrows: false,
+    });
+
+    $('.js_services_slider').slick({
+      dots: true,
+      infinite: true,
+      arrows: false,
+      rows: 6,
+    });
+  }
 }
 
 function init_contact_form() {

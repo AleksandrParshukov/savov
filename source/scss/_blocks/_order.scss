@@ -65,3 +65,55 @@
     }
   }
 }
+
+@media (max-width: 560px) {
+  .order {
+    margin-top: 70px;
+
+    .wrapper {
+      display: block;
+      position: relative;
+    }
+
+    &__title {
+      font-size: 32px;
+      line-height: 1;
+      color: #d4deef;
+    }
+
+    &__steps {
+      font-size: 16px;
+      text-align: center;
+      position: absolute;
+      bottom: 12px;
+      left: 50%;
+      transform: translate(-50%);
+    }
+
+    &__list {
+      max-width: none;
+      margin-top: 40px;
+      gap: 10;
+
+      > li:nth-child(3) {
+        flex-basis: 0;
+      }
+    }
+
+    &__btn {
+      font-size: 14px;
+      color: #a4a6a9;
+      padding: 12px 20px;
+    }
+
+    &__control-btn {
+      font-weight: 700;
+      font-size: 14px;
+      text-align: center;
+      color: #f9f9f9;
+      padding: 14px 30px;
+      margin-top: 57px;
+      border-radius: 15px;
+    }
+  }
+}

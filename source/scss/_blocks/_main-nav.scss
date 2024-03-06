@@ -23,3 +23,9 @@
     margin-right: 35px;
   }
 }
+
+@media (max-width: 560px) {
+  .main-nav {
+    display: none;
+  }
+}

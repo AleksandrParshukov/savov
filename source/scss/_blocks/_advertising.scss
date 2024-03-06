@@ -56,3 +56,59 @@
     opacity: 0.65;
   }
 }
+
+@media (max-width: 560px) {
+  .advertising {
+    margin-top: 50px;
+
+    &__title {
+      font-size: 34px;
+      line-height: 0.89;
+      margin-bottom: 20px;
+    }
+
+    &__caption {
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 1.17;
+      color: #d6d6d6;
+    }
+
+    &__list {
+      margin-top: 24px;
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 18px 13px;
+    }
+
+    &__item {
+      color: #282828;
+      padding: 16px 13px;
+      border-radius: 12px;
+
+      &:nth-child(3) {
+        order: 4;
+      }
+    }
+
+    &__icon {
+      width: 45px;
+    }
+
+    &__name {
+      font-size: 16px;
+      margin-block: 6px 8px;
+
+      > span {
+        display: none;
+      }
+    }
+
+    &__desc {
+      font-weight: 300;
+      font-size: 12px;
+      line-height: 1.1;
+      opacity: 1;
+    }
+  }
+}

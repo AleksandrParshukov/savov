@@ -1,4 +1,6 @@
 .steps {
+  margin-top: 140px;
+
   &__title {
     font-family: $secondary-font;
     font-weight: 700;
@@ -11,7 +13,6 @@
   &__content {
     display: grid;
     grid-template-columns: repeat(5, max-content);
-    justify-content: space-between;
     position: relative;
     gap: 30px 0;
   }
@@ -140,5 +141,124 @@
     display: flex;
     flex-direction: column;
     gap: 20px;
+  }
+}
+
+@media (max-width: 560px) {
+  .steps {
+    margin-top: 60px;
+
+    &__title {
+      font-size: 34px;
+      line-height: 0.89;
+      margin-bottom: 30px;
+    }
+
+    &__content {
+      background: transparent url('../img/steps_bg.svg') no-repeat;
+
+      background-position: center top 20px;
+      background-size: 346px 787px;
+      display: flex;
+      flex-direction: column;
+      gap: 0;
+    }
+
+    &__top-item {
+      font-size: 12px;
+      padding: 13px 24px;
+      margin-top: 0;
+      margin-left: 28px;
+    }
+
+    &__top-quote {
+      font-size: 14px;
+      padding-top: 27px;
+      margin-top: 60px;
+      margin-inline: auto;
+      order: 4;
+
+      &::before {
+        content: '';
+        width: 142px;
+        height: 87px;
+        background: transparent url('../img/steps_top_quote.svg') no-repeat center / contain;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%) rotate(180deg);
+        z-index: -1;
+      }
+
+      &::after {
+        content: none;
+      }
+
+      > span {
+        font-size: 20px;
+      }
+    }
+
+    &__bg {
+      display: none;
+    }
+
+    &__top-items {
+      margin-top: 50px;
+      align-items: start;
+      order: 7;
+
+      > .steps__top-item:last-child {
+        display: none;
+      }
+    }
+
+    &__list-wrap {
+      padding-left: 54px;
+
+      &:nth-child(4) {
+        width: 100%;
+        margin-top: 20px;
+        order: 2;
+      }
+      &:nth-child(5) {
+        width: 100%;
+        margin-top: 45px;
+        order: 3;
+      }
+
+      &:nth-child(6) {
+        width: 100%;
+        margin-top: 50px;
+        order: 5;
+      }
+
+      &:nth-child(7) {
+        width: 100%;
+        margin-top: 55px;
+        order: 6;
+      }
+    }
+
+    &__list-name {
+      font-size: 27px;
+      margin-bottom: 5px;
+      margin-left: 5px;
+
+      &::before {
+        content: none;
+      }
+
+      > span {
+        font-size: 16px;
+        margin-bottom: 3px;
+      }
+    }
+
+    &__list {
+      font-size: 16px;
+      margin-left: 0.7em;
+      gap: 10px;
+    }
   }
 }
