@@ -178,6 +178,12 @@
     background: #d4deef;
     display: grid;
     place-content: center;
+
+    &:hover {
+      color: #fff;
+      backdrop-filter: blur(10px);
+      background: #444445;
+    }
   }
 
   &__photo {

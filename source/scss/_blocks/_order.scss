@@ -59,9 +59,16 @@
   &__control-btn {
     margin-top: 37px;
     margin-left: auto;
+    transition: 0.3s ease;
 
     &:hover {
-      background-color: #242526;
+      color: #fff;
+      background: #242526;
+    }
+
+    &:active {
+      color: #fff;
+      background: #444445;
     }
   }
 }

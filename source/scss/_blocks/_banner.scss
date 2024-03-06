@@ -221,6 +221,10 @@
         right: 36px;
       }
 
+      &.item-5--mobile {
+        display: none;
+      }
+
       .item-5 {
         &__caption {
           font-family: $secondary-font;
@@ -433,6 +437,10 @@
           right: 13px;
         }
 
+        &.item-5--mobile {
+          display: flex;
+        }
+
         .item-5 {
           &__caption {
             font-weight: 900;
@@ -444,10 +452,6 @@
           &__text {
             font-size: 10px;
             opacity: 1;
-          }
-
-          &--mobile {
-            display: flex;
           }
         }
       }

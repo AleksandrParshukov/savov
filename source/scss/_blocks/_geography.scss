@@ -1,0 +1,30 @@
+.geography {
+  margin-top: 140px;
+
+  .wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__title {
+    font-family: $secondary-font;
+    font-weight: 700;
+    font-size: 70px;
+    line-height: 1.1;
+    color: #4f4f4f;
+  }
+
+  &__caption {
+    font-weight: 600;
+    font-size: 52px;
+    line-height: 1;
+    text-align: right;
+    color: #4f4f4f;
+  }
+
+  &__badge {
+    cursor: pointer;
+  }
+}
