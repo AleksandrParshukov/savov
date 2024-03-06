@@ -63,16 +63,18 @@ function init_carousel() {
     cssEase: 'linear',
   });
 
-  $('.js_videos_list').slick({
-    dots: false,
-    infinite: true,
-    arrows: true,
-    prevArrow: $('.videos__nav--prev'),
-    nextArrow: $('.videos__nav--next'),
-    speed: 500,
-    fade: true,
-    cssEase: 'linear',
-  });
+  if ($(window).width() > 560) {
+    $('.js_videos_list').slick({
+      dots: false,
+      infinite: true,
+      arrows: true,
+      prevArrow: $('.videos__nav--prev'),
+      nextArrow: $('.videos__nav--next'),
+      speed: 500,
+      fade: true,
+      cssEase: 'linear',
+    });
+  }
 
   if ($(window).width() <= 560) {
     $('.js_technologies_slider').slick({
