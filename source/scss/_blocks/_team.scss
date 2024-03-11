@@ -117,7 +117,84 @@
       background-color: #000;
       border-radius: 55px;
       display: flex;
+      align-items: center;
       gap: 8px;
+    }
+  }
+}
+
+@media (max-width: 1650px) {
+  .team {
+    margin-top: 130px;
+
+    &__title {
+      font-size: 50px;
+      margin-bottom: 55px;
+    }
+
+    &__list {
+      grid-template-columns: repeat(3, 380px);
+      gap: 70px 17px;
+    }
+
+    &__item {
+      gap: 25px;
+    }
+
+    &__photo {
+      width: 120px;
+      height: 125px;
+    }
+
+    &__info {
+      > p {
+        margin-left: 4px;
+      }
+    }
+
+    &__name {
+      font-size: 18px;
+    }
+
+    &__position {
+      font-size: 12px;
+      margin-block: 3px;
+    }
+
+    &__experience {
+      font-size: 12px;
+    }
+
+    &__tags {
+      margin-top: 13px;
+      gap: 7px;
+    }
+
+    &__tag {
+      font-size: 10px;
+      padding: 4px 13px;
+    }
+
+    &__icon {
+      > img {
+        max-width: 90px;
+      }
+
+      &::before {
+        content: '';
+        width: 117px;
+        height: 64px;
+      }
+    }
+
+    &__desc {
+      font-size: 13px;
+
+      > a {
+        font-size: 8px;
+        padding: 6px 9px;
+        margin-top: 10px;
+      }
     }
   }
 }

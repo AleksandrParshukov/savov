@@ -57,6 +57,43 @@
   }
 }
 
+@media (max-width: 1650px) {
+  .advertising {
+    margin-top: 80px;
+
+    &__title {
+      font-size: 50px;
+    }
+
+    &__caption {
+      font-size: 24px;
+    }
+
+    &__list {
+      margin-top: 40px;
+      gap: 24px;
+    }
+
+    &__item {
+      padding: 28px 40px 45px 25px;
+      border-radius: 12px;
+    }
+
+    &__icon {
+      width: 65px;
+    }
+
+    &__name {
+      font-size: 20px;
+      margin-block: 25px 10px;
+    }
+
+    &__desc {
+      font-size: 13px;
+    }
+  }
+}
+
 @media (max-width: 560px) {
   .advertising {
     margin-top: 50px;

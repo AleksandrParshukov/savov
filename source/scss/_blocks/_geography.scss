@@ -28,3 +28,27 @@
     cursor: pointer;
   }
 }
+
+@media (max-width: 1650px) {
+  .geography {
+    margin-top: 80px;
+
+    &__title {
+      font-size: 50px;
+    }
+
+    &__caption {
+      font-size: 38px;
+    }
+
+    &__badge {
+      cursor: pointer;
+    }
+  }
+}
+
+@media (max-width: 560px) {
+  .geography {
+    display: none;
+  }
+}

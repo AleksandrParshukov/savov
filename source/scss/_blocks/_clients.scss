@@ -39,6 +39,26 @@
   }
 }
 
+@media (max-width: 1650px) {
+  .clients {
+    margin-top: 80px;
+
+    &__title {
+      font-size: 38px;
+      margin-bottom: 45px;
+    }
+
+    &__list {
+      gap: 23px 0;
+    }
+
+    &__img {
+      width: 223px;
+      height: 148px;
+    }
+  }
+}
+
 @media (max-width: 560px) {
   .clients {
     margin-top: 90px;

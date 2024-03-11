@@ -15,6 +15,18 @@
   }
 }
 
+@media (max-width: 1650px) {
+  .our-mission {
+    font-size: 50px;
+    padding-block: 33px;
+    margin-top: 210px;
+
+    p {
+      max-width: 933px;
+    }
+  }
+}
+
 @media (max-width: 560px) {
   .our-mission {
     font-size: 32px;

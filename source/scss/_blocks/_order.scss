@@ -73,6 +73,39 @@
   }
 }
 
+@media (max-width: 1650px) {
+  .order {
+    margin-top: 140px;
+
+    .wrapper {
+      gap: 35px;
+    }
+
+    &__title {
+      font-size: 50px;
+    }
+
+    &__steps {
+      font-size: 25px;
+    }
+
+    &__list {
+      max-width: 620px;
+      gap: 23px 20px;
+    }
+
+    &__btn {
+      font-size: 13px;
+      padding: 15px 21px;
+      border-radius: 84px;
+    }
+
+    &__control-btn {
+      margin-top: 30px;
+    }
+  }
+}
+
 @media (max-width: 560px) {
   .order {
     margin-top: 70px;

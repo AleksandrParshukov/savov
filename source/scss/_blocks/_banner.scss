@@ -242,10 +242,6 @@
           color: #f9f9f9;
           opacity: 0.75;
         }
-
-        &--mobile {
-          display: none;
-        }
       }
     }
 
@@ -279,6 +275,169 @@
         &__graph {
           width: 589px;
           height: 171px;
+        }
+
+        &__circles {
+          width: 91px;
+          height: 249px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1650px) {
+  .banner {
+    &__top {
+      height: 445px;
+      padding: 32px 45px;
+    }
+
+    &__title {
+      font-size: 70px;
+      margin-bottom: 31px;
+    }
+
+    &__top-text {
+      font-size: 22px;
+    }
+
+    &__btn {
+      font-size: 18px;
+      padding: 11px 40px;
+    }
+
+    &__slider {
+      width: 315px;
+    }
+
+    &__slider-item {
+      gap: 6px 21px;
+
+      > img {
+        width: 38px;
+      }
+    }
+
+    &__slider-name {
+      font-size: 18px;
+    }
+
+    &__slider-text {
+      font-size: 13px;
+    }
+
+    .slick-dots {
+      padding-left: 59px;
+    }
+
+    &__bottom {
+      margin-top: 20px;
+    }
+
+    &__list {
+      grid-template-rows: repeat(2, 209px);
+      gap: 20px;
+    }
+
+    &__item {
+      &.item-1 {
+        padding: 26px;
+
+        > img {
+          width: 140px;
+          height: 62px;
+        }
+      }
+
+      &.item-2 {
+        padding: 22px 25px 25px;
+
+        p {
+          font-size: 28px;
+        }
+      }
+
+      &.item-3 {
+        padding: 20px 18px;
+
+        > img {
+          width: 130px;
+          margin: 20px auto 24px;
+        }
+
+        .btn {
+          font-size: 16px;
+          padding: 14px 20px;
+          margin-top: 20px;
+        }
+
+        .item-3 {
+          &__caption {
+            font-size: 24px;
+            margin-bottom: 14px;
+          }
+
+          &__text-1 {
+            font-size: 13px;
+          }
+
+          &__text-2 {
+            font-size: 13px;
+          }
+        }
+      }
+
+      &.item-4 {
+        > img {
+          width: 308px;
+          height: 279px;
+          top: -56px;
+          left: 0;
+        }
+      }
+
+      &.item-5 {
+        padding: 18px;
+
+        > img {
+          bottom: 18px;
+          right: 18px;
+        }
+
+        .item-5 {
+          &__caption {
+            font-size: 24px;
+          }
+
+          &__text {
+            font-size: 13px;
+          }
+        }
+      }
+
+      &.item-6 {
+        padding: 10px 25px;
+        gap: 30px;
+
+        .item-6 {
+          &__content {
+            gap: 10px;
+          }
+
+          &__caption {
+            font-size: 28px;
+          }
+
+          &__graph {
+            width: 404px;
+            height: 132px;
+          }
+
+          &__circles {
+            width: 76px;
+            height: 178px;
+          }
         }
       }
     }

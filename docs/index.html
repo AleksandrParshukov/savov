@@ -45,7 +45,7 @@
           </ul>
 
           <a class="main-nav__phone" href="tel:+79006566903">+7 900 656 69 03</a>
-          <a class="main-nav__callback btn" href="">Заявка</a>
+          <a class="main-nav__callback btn" href="#modal_order" data-bs-toggle="modal" data-bs-target="#modal_order">Заявка</a>
         </nav>
       </div>
     </header>
@@ -65,7 +65,7 @@
       <div class="banner__top-content">
         <h1 class="banner__title">Контекстная реклама</h1>
         <p class="banner__top-text">Настройка&nbsp;и ведение:<br> от&nbsp;150&nbsp;000&nbsp;руб.</p>
-        <a class="banner__btn btn btn--secondary" href="#callback">Подать заявку</a>
+        <a class="banner__btn btn btn--secondary" href="#modal_order" data-bs-toggle="modal" data-bs-target="#modal_order">Подать заявку</a>
       </div>
 
       <div class="banner__slider">
@@ -149,7 +149,7 @@
             </picture>
           </div>
 
-          <img src="./img/banner_circles.svg" width="92" height="249" alt="">
+          <img class="item-6__circles" src="./img/banner_circles.svg" width="92" height="249" alt="">
         </li>
       </ul>
     </div>
@@ -374,7 +374,7 @@
             <img src="./img/rates_gift.png" width="77" height="64" alt="">
             Две недели<br> ведения в подарок
           </p>
-          <a class="rates__link" href="">Заявка на мечту</a>
+          <a class="rates__link" href="#modal_order" data-bs-toggle="modal" data-bs-target="#modal_order">Заявка на мечту</a>
         </div>
 
         <img class="rates__photo" src="./img/rates_photo_1.png" width="871" height="690" alt="">
@@ -383,7 +383,7 @@
         <p class="rates__caption">Ведение</p>
         <p class="rates__desc">Ведение уже существующих рекламных кампаний</p>
         <img class="rates__steps" src="./img/rates_steps_2.svg" width="459" height="239" alt="">
-        <a class="rates__link" href="">Заявка на мечту</a>
+        <a class="rates__link" href="#modal_order" data-bs-toggle="modal" data-bs-target="#modal_order">Заявка на мечту</a>
 
         <img class="rates__photo" src="./img/rates_photo_2.png" width="869" height="690" alt="">
       </div>
@@ -391,7 +391,7 @@
         <p class="rates__caption">Масштабирование</p>
         <p class="rates__desc">Расширение маркетинговых мероприятий</p>
         <img class="rates__steps" src="./img/rates_steps_3.svg" width="460" height="246" alt="">
-        <a class="rates__link" href="">Заявка на мечту</a>
+        <a class="rates__link" href="#modal_order" data-bs-toggle="modal" data-bs-target="#modal_order">Заявка на мечту</a>
 
         <img class="rates__photo" src="./img/rates_photo_3.png" width="830" height="690" alt="">
       </div>
@@ -399,7 +399,7 @@
         <p class="rates__caption">Аудит</p>
         <p class="rates__desc">Ведение уже существующих рекламных кампаний</p>
         <img class="rates__steps" src="./img/rates_steps_4.svg" width="479" height="304" alt="">
-        <a class="rates__link" href="">Заявка на мечту</a>
+        <a class="rates__link" href="#modal_order" data-bs-toggle="modal" data-bs-target="#modal_order">Заявка на мечту</a>
 
         <img class="rates__photo" src="./img/rates_photo_4.png" width="839" height="690" alt="">
       </div>
@@ -1474,7 +1474,11 @@
 
 <section class="callback">
   <div class="wrapper">
-    <h2 class="callback__title">Оставьте заявку на<br class="mobile-hide"> реализацию вашей мечты 🔥</h2>
+    <h2 class="callback__title">
+      Оставьте заявку на
+      <br class="mobile-hide">
+      реализацию вашей мечты 🔥
+    </h2>
 
     <form class="callback__form">
       <p class="callback__form-title">Оставьте заявку.</p>
@@ -1488,13 +1492,13 @@
         <button class="callback__btn btn js_callback_file">Прикрепить файл</button>
         <p>*Файл должен быть не более 10 мб</p>
 
-        <input type="file" name="file" placeholder="Email">
+        <input type="file" name="file">
       </div>
 
       <a class="callback__btn btn" href="">Скачать КП</a>
 
       <div class="callback__bottom">
-        <button class="callback__submit">Отправить заявку</button>
+        <button class="callback__submit btn btn--secondary" disabled>Отправить заявку</button>
         <p class="callback__note">
           Нажав на кнопку, соглашаюсь<br>
           на обработку <a href="">персональных данных</a>
@@ -1586,6 +1590,28 @@
     </div>
   </div>
 </section>
+
+<div class="modal fade" id="modal_order" tabindex="-1" aria-labelledby="modal_order" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <form class="modal__form modal-order" action="">
+        <p class="modal-order__title">Оформление заказа</p>
+
+        <input class="modal-order__input" type="text" name="name" placeholder="Имя">
+        <input class="modal-order__input" type="text" name="phone" placeholder="Телефон">
+        <input class="modal-order__input" type="email" name="email" placeholder="Email">
+
+        <div class="modal-order__bottom">
+          <button class="modal-order__submit btn btn--secondary" disabled>Отправить заявку</button>
+          <p class="modal-order__note">
+            Нажав на кнопку, соглашаюсь
+            на обработку<br> <a href="">персональных данных</a>
+          </p>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
 
 </main>
 

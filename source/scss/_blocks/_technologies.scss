@@ -21,6 +21,7 @@
     flex-grow: 1;
     display: grid;
     grid-template-columns: min-content 1fr;
+    grid-template-rows: min-content min-content;
     gap: 16px 26px;
 
     > img {
@@ -45,6 +46,38 @@
     font-size: 18px;
     line-height: 1.2;
     color: #7a7a7a;
+  }
+}
+
+@media (max-width: 1650px) {
+  .technologies {
+    margin-top: 80px;
+
+    &__title {
+      font-size: 50px;
+      margin-bottom: 40px;
+    }
+
+    &__list {
+      gap: 60px 34px;
+    }
+
+    &__item {
+      gap: 8px 15px;
+
+      > img {
+        width: 53px;
+        height: 43px;
+      }
+    }
+
+    &__name {
+      font-size: 20px;
+    }
+
+    &__desc {
+      font-size: 13px;
+    }
   }
 }
 

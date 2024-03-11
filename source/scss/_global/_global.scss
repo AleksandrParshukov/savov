@@ -33,6 +33,8 @@ body {
   height: 100%;
   background: #181818 url('../img/body_bg.svg') no-repeat right top -72.5%;
   scroll-behavior: smooth;
+  overflow: visible !important;
+  padding: 0 !important;
 }
 
 h1,

@@ -24,6 +24,23 @@
   }
 }
 
+@media (max-width: 1650px) {
+  .main-nav {
+    &__list {
+      gap: 40px;
+    }
+
+    &__link {
+      font-size: 12px;
+    }
+
+    &__phone {
+      font-size: 13px;
+      margin-right: 40px;
+    }
+  }
+}
+
 @media (max-width: 560px) {
   .main-nav {
     display: none;

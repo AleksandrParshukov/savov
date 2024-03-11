@@ -24,6 +24,12 @@
   }
 }
 
+@media (max-width: 1650px) {
+  .breadcrumbs {
+    margin: 8px 0 35px;
+  }
+}
+
 @media (max-width: 560px) {
   .breadcrumbs {
     list-style: none;

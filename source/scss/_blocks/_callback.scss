@@ -57,6 +57,14 @@
     gap: 10px;
     align-items: center;
 
+    > .callback__btn {
+      max-width: 200px;
+      height: 43px;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      overflow: hidden;
+    }
+
     > input {
       display: none;
     }
@@ -86,8 +94,11 @@
     color: #f9f9f9;
     width: max-content;
     padding: 14px 46px;
-    background: #282828;
     border-radius: 123px;
+
+    &:disabled {
+      background: #282828;
+    }
   }
 
   &__note {
@@ -100,6 +111,67 @@
       text-decoration: underline;
       text-decoration-skip-ink: none;
       color: #d4deef;
+    }
+  }
+}
+
+@media (max-width: 1650px) {
+  .callback {
+    padding-block: 45px 215px;
+    margin-top: 80px;
+
+    &__title {
+      font-size: 50px;
+      margin-bottom: 110px;
+    }
+
+    &__form {
+      width: 561px;
+      padding: 40px 47px;
+    }
+
+    &__form-title {
+      font-size: 24px;
+      margin-bottom: 17px;
+    }
+
+    &__form-text {
+      font-size: 13px;
+      margin-bottom: 50px;
+    }
+
+    &__input {
+      padding-bottom: 10px;
+      margin-bottom: 30px;
+    }
+
+    &__file {
+      margin-bottom: 12px;
+      gap: 10px;
+
+      > .callback__btn {
+        max-width: 140px;
+        height: 33px;
+      }
+    }
+
+    &__btn {
+      font-size: 10px;
+      padding: 8px 12px;
+    }
+
+    &__bottom {
+      margin-top: 40px;
+      gap: 15px;
+    }
+
+    &__submit {
+      font-size: 13px;
+      padding: 12px 30px;
+    }
+
+    &__note {
+      font-size: 13px;
     }
   }
 }

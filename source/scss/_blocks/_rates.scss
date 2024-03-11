@@ -193,20 +193,17 @@
   }
 }
 
-@media (max-width: 560px) {
+@media (max-width: 1650px) {
   .rates {
-    margin-top: 50px;
+    margin-top: 120px;
 
     .wrapper {
-      display: flex;
-      flex-direction: column;
-      gap: 35px;
+      gap: 20px;
     }
 
     &__title {
-      font-size: 34px;
-      line-height: 0.89;
-      margin-bottom: 40px;
+      font-size: 50px;
+      margin-bottom: 10px;
     }
 
     &__control {
@@ -231,6 +228,124 @@
           border-radius: 0 12px 0 0;
         }
       }
+    }
+
+    &__btn {
+      padding: 23px 23px 20px 28px;
+      border-radius: 12px;
+    }
+
+    &__name {
+      font-size: 12px;
+    }
+
+    &__price {
+      font-size: 22px;
+    }
+
+    &__more {
+      font-size: 13px;
+      margin: 50px 0 0 auto;
+
+      > svg {
+        width: 23px;
+        height: 16px;
+        margin-top: 8px;
+        margin-left: 6px;
+      }
+    }
+
+    &__slider {
+      width: 568px;
+    }
+
+    &__item {
+      height: 491px;
+      padding: 21px 33px 30px;
+      border-radius: 12px;
+
+      &:nth-child(1) {
+        .rates__photo {
+          right: -49px;
+        }
+      }
+
+      &:nth-child(2) {
+        .rates__photo {
+          right: -47px;
+        }
+      }
+
+      &:nth-child(3) {
+        .rates__photo {
+          right: -20px;
+        }
+      }
+
+      &:nth-child(4) {
+        .rates__photo {
+          right: -29px;
+        }
+      }
+    }
+
+    &__caption {
+      font-size: 37px;
+    }
+
+    &__desc {
+      font-size: 18px;
+      max-width: 300px;
+      margin-block: 15px 20px;
+    }
+
+    &__steps {
+      max-width: 320px;
+      height: auto;
+      margin-block: auto;
+    }
+
+    &__item-bottom {
+      > p {
+        font-size: 18px;
+
+        > img {
+          width: 57px;
+          height: 43px;
+        }
+      }
+    }
+
+    &__link {
+      font-size: 13px;
+      padding: 10px 30px;
+      border-radius: 12px;
+    }
+
+    &__photo {
+      width: auto;
+      height: 100%;
+      position: absolute;
+      bottom: 0;
+      z-index: -1;
+    }
+  }
+}
+
+@media (max-width: 560px) {
+  .rates {
+    margin-top: 50px;
+
+    .wrapper {
+      display: flex;
+      flex-direction: column;
+      gap: 35px;
+    }
+
+    &__title {
+      font-size: 34px;
+      line-height: 0.89;
+      margin-bottom: 40px;
     }
 
     &__btn {

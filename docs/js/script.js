@@ -120,17 +120,30 @@ function init_carousel() {
 }
 
 function init_contact_form() {
-  const $callback_form = $('.callback__form');
+  const $callback_form = $('.callback__form'),
+    $inputs = $callback_form.find('input'),
+    $file = $inputs.filter('[type="file"]');
 
-  $('input[name="phone"]').on('keydown', function (evt) {
+  check_inputs();
+  update_file_name();
+
+  $callback_form.find('input[name="phone"]').on('keydown', function (evt) {
     if ($(this).val() == '' && evt.originalEvent.key == '8') {
       evt.preventDefault();
 
       $(this).val('+7 ');
     }
 
-    $(this).mask('+7 000 000-00-00');
+    $(this).mask('+7 (000) 000-00-00');
   });
+
+  $('.js_callback_file').on('click', function () {
+    $inputs.filter('[type="file"]').trigger('click');
+  });
+
+  $file.on('change', update_file_name);
+
+  $inputs.on('change input', check_inputs);
 
   $callback_form.on('submit', function (evt) {
     evt.preventDefault();
@@ -155,6 +168,25 @@ function init_contact_form() {
   $('.modal__close').on('click', function () {
     $(this).closest('.modal').removeClass('open');
   });
+
+  function update_file_name() {
+    if ($file.val() == '' || $file[0].files[0].size > 10485760) {
+      $(this).val('');
+      $('.js_callback_file').text('Прикрепить файл');
+    } else {
+      $('.js_callback_file').text($file[0].files[0].name);
+    }
+  }
+
+  function check_inputs() {
+    const is_complete = $inputs.toArray().reduce((res, current) => res * ($(current).val() != ''), true);
+
+    if (is_complete) {
+      $('.callback__submit').attr('disabled', false);
+    } else {
+      $('.callback__submit').attr('disabled', 'disabled');
+    }
+  }
 }
 
 $(document).ready(function () {

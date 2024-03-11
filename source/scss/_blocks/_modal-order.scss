@@ -1,0 +1,56 @@
+.modal-order {
+  border-radius: 24px;
+  padding: 45px 50px;
+  width: 574px;
+  backdrop-filter: blur(55px);
+  background: rgba(57, 59, 63, 0.7);
+  display: flex;
+  flex-direction: column;
+
+  &__title {
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 1.2;
+    text-align: center;
+    color: #fff;
+    margin-bottom: 50px;
+  }
+
+  &__input {
+    font-weight: 700;
+    font-size: 18px;
+    color: #fff;
+    padding-bottom: 15px;
+    margin-bottom: 30px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #fff;
+  }
+
+  &__bottom {
+    text-align: center;
+  }
+
+  &__submit {
+    font-weight: 700;
+    font-size: 20px;
+    text-align: center;
+    color: #f9f9f9;
+    width: 100%;
+    padding: 14px 46px;
+    margin-bottom: 11px;
+    border-radius: 123px;
+
+    &:disabled {
+      background: #282828;
+    }
+  }
+
+  &__note {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.43233;
+    text-align: center;
+    color: #fff;
+  }
+}

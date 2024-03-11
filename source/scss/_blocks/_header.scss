@@ -13,6 +13,14 @@
   }
 }
 
+@media (max-width: 1650px) {
+  .header {
+    .wrapper {
+      padding-block: 30px 15px;
+    }
+  }
+}
+
 @media (max-width: 560px) {
   .header {
     padding-top: 16px;

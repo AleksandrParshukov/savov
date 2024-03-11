@@ -80,6 +80,50 @@
   }
 }
 
+@media (max-width: 1650px) {
+  .footer {
+    padding-block: 35px 100px;
+    margin-top: 35px;
+
+    .wrapper {
+      display: grid;
+      grid-template-columns: 322px 1fr;
+      gap: 32px 95px;
+    }
+
+    &__logo {
+      width: 322px;
+      height: 50px;
+    }
+
+    &__privacy {
+      font-size: 10px;
+
+      > a {
+        margin-bottom: 8px;
+      }
+    }
+
+    &__menu-list {
+      gap: 50px;
+    }
+
+    &__menu-caption {
+      font-size: 13px;
+      margin-bottom: 15px;
+    }
+
+    &__menu {
+      gap: 8px;
+    }
+
+    &__link {
+      font-size: 13px;
+      gap: 8px;
+    }
+  }
+}
+
 @media (max-width: 560px) {
   .footer {
     padding-block: 40px 45px;

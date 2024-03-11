@@ -93,6 +93,56 @@
   }
 }
 
+@media (max-width: 1650px) {
+  .reviews {
+    margin-top: 80px;
+
+    &__title {
+      font-size: 37px;
+      margin-bottom: 40px;
+    }
+
+    &__list {
+      gap: 22px;
+    }
+
+    &__item {
+      gap: 12px;
+    }
+
+    &__preview {
+      border-radius: 12px;
+
+      > svg {
+        width: 53px;
+        height: 50px;
+      }
+    }
+
+    &__info {
+      padding-inline: 17px 7px;
+      gap: 11px;
+    }
+
+    &__avatar {
+      width: 43px;
+    }
+
+    &__author {
+      font-size: 16px;
+    }
+
+    &__tag {
+      font-size: 10px;
+      padding: 4px 10px;
+    }
+
+    &__text {
+      font-size: 12px;
+    }
+  }
+}
+
 @media (max-width: 560px) {
   .reviews {
     margin-top: 100px;

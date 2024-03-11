@@ -42,6 +42,43 @@
   }
 }
 
+@media (max-width: 1650px) {
+  .testimonials {
+    margin-top: 80px;
+
+    &__title {
+      font-size: 50px;
+      margin-bottom: 20px;
+    }
+
+    &__caption {
+      font-size: 23px;
+      margin-bottom: 45px;
+    }
+
+    &__list {
+      gap: 30px;
+    }
+
+    &__item {
+      padding: 21px 25px 30px;
+    }
+
+    &__logo {
+      width: 170px;
+      height: 32px;
+      object-fit: contain;
+    }
+
+    &__img {
+      width: 224px;
+      height: 319px;
+      margin-top: 25px;
+      border-radius: 15px;
+    }
+  }
+}
+
 @media (max-width: 560px) {
   .testimonials {
     margin-top: 175px;
