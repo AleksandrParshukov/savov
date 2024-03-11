@@ -24,11 +24,21 @@ function init_menu() {
 }
 
 function init_carousel() {
+  /* ============= Banner Start ============ */
+
   $('.banner__slider').slick({
     dots: true,
     infinite: true,
     arrows: false,
   });
+
+  $('.item-6__slider').slick({
+    dots: true,
+    infinite: true,
+    arrows: false,
+  });
+
+  /* ============= Banner End ============ */
 
   /* ============= Rates Start ============ */
 
